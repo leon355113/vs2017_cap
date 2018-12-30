@@ -1,0 +1,113 @@
+﻿body {
+
+}
+header {
+    background-color: $site-color-header;
+    height: 120px;
+    left: 0;
+    top: 0;
+    right: 0;
+    position: fixed;
+}
+
+nav {
+    ul {
+        li {
+            a {
+                text-decoration: none;
+
+                &:link {
+                    text-decoration: none;
+                }
+
+                &:visited {
+                    color: #fff;
+                }
+
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}
+
+.dropdown 
+{
+        display: inline-block;
+        float: right;
+        position: fixed;
+}
+
+footer 
+{
+    background-color: $site-color-footer;
+    color: #fff;
+    height: 60px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    padding-top: 10px;
+}
+
+section 
+{
+        padding-top: 130px;
+        margin-bottom: 100px;
+}
+
+.headerlogo
+{
+        float: left;
+        width: 160px;
+        height: auto;
+        margin-left: 10px;
+        margin-top: 10px;
+}
+
+.dropdown-content
+{
+        display: block;
+        float: left;
+        padding-top: 20px;
+}
+
+.dropdown-content li 
+{
+        display: block;
+        float: left;
+        padding-right: 30px;
+}
+
+#RegistroAlta label
+{
+        display: block;
+        margin: 10px 0 0 0;
+}
+
+#RegistroAlta02 div 
+{
+        margin: 10px 0 0 0;
+}
+
+#RegistroAlta02 div label {
+    @include field-set-group(15%);
+}
+
+#RegistroAlta03 fieldset {
+    @include field-set-group(45%);
+}
+
+#RegistroAlta03 label 
+{
+        display: block;
+        margin: 10px 0 0 0;
+}
+
+input:focus 
+{
+        border: 1px solid #000;
+        background-color: #F3F3F3;
+}

@@ -1,0 +1,68 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Bienvenidos a Cibertec Web</title>
+    <link href="Content/styles.min.css" rel="stylesheet" />
+</head>
+<body>
+    <header>
+        <img src="Content/images/logo.jpg" class="headerlogo" />
+        <nav class="dropdown">
+            <ul class="dropdown-content">
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Registro</a></li>
+                <li><a href="#">Nuevos productos</a></li>
+                <li><a href="#">Ubicanos</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <h3>Registro</h3>
+        <form>
+            <p>
+                Experiencia Laboral:<br />
+                EF: <input type="number" value="0" min="0" step="0.1" /> <br />
+                ADO: <input type="number" value="0" min="0" /> <br />
+                MVC: <input type="number" value="0" min="0" /> <br />
+                JavaScript: <input type="number" value="0" min="0" /> <br />
+            </p>
+            <p>
+                Código: <input type="text" readonly value="1001" />
+            </p>
+            <p>
+                <datalist id="browsers">
+                    <option value="IE">Internet Explorer</option>
+                    <option value="FI">Firefox</option>
+                    <option value="Chrome"></option>
+                    <option value="Opera"></option>
+                    <option value="Safari"></option>
+                </datalist>
+                Browser Preferido: <input list="browsers" />
+            </p>
+            <p>
+                Nombre: <input type="text" required title="Ingresar Nombre"
+                               oninvalid="this.setCustomValidity('El nombre es requerido')"
+                               oninput="this.setCustomValidity('')" />
+            </p>
+            <p>
+                Color Favorito: <input type="color" value="#fff" />
+            </p>
+            <p>
+                Certificados: <input type="file" multiple accept=".pdf, .docx" />
+            </p>
+            <p>
+                Curriculo: <input type="file"   accept=".pdf" />
+            </p>
+            <p>
+                <button type="submit">Grabar datos</button>
+            </p>
+
+        </form>
+    </section>
+    <footer>
+        Nuestra dirección
+        &copy; Todos los derechos reservados a Cibertec
+    </footer>
+</body>
+</html>
