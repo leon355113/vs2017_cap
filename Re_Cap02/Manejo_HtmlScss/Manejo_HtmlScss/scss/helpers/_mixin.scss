@@ -1,2 +1,6 @@
-﻿body {
+﻿
+/*mixin desc analogo a las funciones*/
+@mixin field-set-group($width) {
+    float: left;
+    width: $width;
 }
