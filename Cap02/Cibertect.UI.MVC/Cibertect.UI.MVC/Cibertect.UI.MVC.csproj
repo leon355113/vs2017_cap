@@ -188,6 +188,7 @@
     <Content Include="Registro04.html" />
     <Content Include="Registro03.html" />
     <Content Include="Registro02.html" />
+    <Content Include="Registro_P01.html" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="ApplicationInsights.config">
