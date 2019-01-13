@@ -158,9 +158,11 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\RegistroController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\PersonaViewModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -170,11 +172,18 @@
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\css\Site.css" />
     <Content Include="Content\Html\Elementos.html" />
+    <Content Include="Content\Html\EventosJQuery.html" />
+    <Content Include="Content\Html\Eventos.html" />
     <Content Include="Content\Html\Imagenes.html" />
     <Content Include="Content\Html\Listas.html" />
+    <Content Include="Content\Html\localStorageGet.html" />
+    <Content Include="Content\Html\RegistroAJAX.html" />
     <Content Include="Content\Html\Tablas.html" />
+    <Content Include="Content\Html\localStorageSet.html" />
+    <Content Include="Content\Html\UsoHelpers.html" />
     <Content Include="Content\images\logo.jpg" />
     <Content Include="Content\images\navidad.jpg" />
+    <Content Include="Content\js\helpers.js" />
     <Content Include="Content\js\video.js" />
     <Content Include="Content\js\index.js" />
     <Content Include="Content\media\html5.mp4" />
@@ -241,7 +250,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Models\" />
+    <Folder Include="Views\Registro\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
