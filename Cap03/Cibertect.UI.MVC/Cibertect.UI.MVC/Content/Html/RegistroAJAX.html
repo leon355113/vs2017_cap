@@ -1,0 +1,81 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link href="../css/Site.css" rel="stylesheet" />
+    <script src="../../Scripts/jquery-3.3.1.min.js"></script>
+    <script src="../js/helpers.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(config);
+
+        function config() {
+            $(".Guardar").on("click", Guardar);
+
+            function Guardar() {
+                //debugger;
+                //Recuperar los datos del formulario
+                var formPersona = {};// con {} definimos un objeto
+
+                //el nombre de propiedades de js tiene que ser igual a las propiedades el viewmodel personaviewmodel
+                formPersona.nombres = $("#Txt_Nombre").val();
+                formPersona.apellidos = $("#Txt_Apellido").val();
+                formPersona.dni = $("#Txt_DNI").val();
+
+                
+                //controlador/accion
+                $.post("/Registro/Registro",
+                    {
+                        //PersonaViewModel -> persona (tiene que ser iguales suprimiendo el ViewModel es case sensitive)
+                        persona: formPersona 
+                    },
+                    function (response) {
+                       // debugger;
+                        alert("Se registró correctamente a la persona " + response.FullName);
+                    }
+                );
+            }            
+        }
+    </script>
+</head>
+<body>
+    <form id="RegistroAlta03">
+        <fieldset>
+            <legend>Alta de servicios:</legend>
+            <label for="Txt_Nombre">Nombres</label>
+            <input type="text" id="Txt_Nombre" />
+
+            <label for="Txt_Apellido">Apellidos</label>
+            <input type="text" id="Txt_Apellido" />
+
+            <label for="Txt_DNI">DNI</label>
+            <input type="text" id="Txt_DNI" />
+
+            <label for="Txt_Contraseña">Contraseña</label>
+            <input type="password" id="Txt_Contraseña" />
+
+
+        </fieldset>
+
+        <fieldset>
+            <legend>Datos del Contacto:</legend>
+            <label for="Txt_Telefono">Telefono</label>
+            <input type="text" id="Txt_Telefono" />
+
+            <label for="Txt_Email">Email</label>
+            <input type="text" id="Txt_Email" />
+
+            <label for="Txt_Direccion">Direccion</label>
+            <input type="text" id="Txt_Direccion" />
+
+            <label for="Txt_CodigoPostal">Codigo postal</label>
+            <input type="text" id="Txt_CodigoPostal" />
+        </fieldset>
+
+        <p>
+            <button type="button" class="Guardar">Grabar datos</button>           
+        </p>
+    </form>
+</body>
+</html>

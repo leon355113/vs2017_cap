@@ -1,6 +1,10 @@
+<<<<<<< HEAD
 ﻿/*son variable content defs colores*/
 /*mixin desc analogo a las funciones*/
 header {
+=======
+﻿header {
+>>>>>>> 32165140506031dd17f24a1d483f5cc0836fd07b
   background-color: #a5bfe8;
   height: 120px;
   left: 0;
@@ -10,6 +14,7 @@ header {
 
 nav ul li a {
   text-decoration: none; }
+<<<<<<< HEAD
   nav ul li a:link {
     text-decoration: none; }
   nav ul li a:visited {
@@ -76,3 +81,14 @@ section {
 input:focus {
   border: 1px solid #000;
   background-color: #F3F3F3; }
+=======
+
+nav ul li a:link {
+  text-decoration: none; }
+
+nav ul li a:visited {
+  color: #fff; }
+
+nav ul li a:hover {
+  text-decoration: underline; }
+>>>>>>> 32165140506031dd17f24a1d483f5cc0836fd07b

@@ -1,0 +1,68 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link href="../css/Site.css" rel="stylesheet" />
+    <script src="../../Scripts/jquery-3.3.1.min.js"></script>
+    <script src="../js/helpers.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(config);
+
+        function config() {
+            cibertec.helpers.BloquearControls();
+            MostrarValores();
+        }
+        function MostrarValores() {
+            //debugger;
+            //Recuperar los datos del key
+            var persona = cibertec.helpers.GetObjectLocalStorage("registroPersona");
+
+            $("#Txt_Nombre").val(persona.nombres );
+            $("#Txt_Apellido").val(persona.apellidos);
+            $("#Txt_DNI").val(persona.dni);
+
+                
+        }  
+        
+    </script>
+</head>
+<body>
+    <form id="RegistroAlta03">
+        <fieldset>
+            <legend>Alta de servicios:</legend>
+            <label for="Txt_Nombre">Nombres</label>
+            <input type="text" id="Txt_Nombre" />
+
+            <label for="Txt_Apellido">Apellidos</label>
+            <input type="text" id="Txt_Apellido" />
+
+            <label for="Txt_DNI">DNI</label>
+            <input type="text" id="Txt_DNI" />
+
+            <label for="Txt_Contraseña">Contraseña</label>
+            <input type="password" id="Txt_Contraseña" />
+
+
+        </fieldset>
+
+        <fieldset>
+            <legend>Datos del Contacto:</legend>
+            <label for="Txt_Telefono">Telefono</label>
+            <input type="text" id="Txt_Telefono" />
+
+            <label for="Txt_Email">Email</label>
+            <input type="text" id="Txt_Email" />
+
+            <label for="Txt_Direccion">Direccion</label>
+            <input type="text" id="Txt_Direccion" />
+
+            <label for="Txt_CodigoPostal">Codigo postal</label>
+            <input type="text" id="Txt_CodigoPostal" />
+        </fieldset>
+
+       
+    </form>
+</body>
+</html>

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ﻿//[
 //  {
 //    "outputFile": "scss/styles.css",
@@ -7,6 +8,13 @@
 [
   {
     "outputFile": "Content/styles.css",
+=======
+﻿[
+  {
+    //ruta donde se generara el archivo scss
+    "outputFile": "Content/styles.css",
+    //ruta donde esta el archivo que va generar scss
+>>>>>>> 32165140506031dd17f24a1d483f5cc0836fd07b
     "inputFile": "scss/styles.scss"
   }
 ]

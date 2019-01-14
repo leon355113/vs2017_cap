@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ﻿/*son variable content defs colores*/
 /*mixin desc analogo a las funciones*/
 header {
@@ -8,6 +9,22 @@ header {
   right: 0;
   position: fixed; }
 
+=======
+﻿/*cada ves que section hace un cambio section debe recompilar a travez defs x-ms-webview conpiler*/
+header {
+  /*color del fondo utilizando variable*/
+  background-color: #a5bfe8;
+  /*alto de la cabecera*/
+  height: 120px;
+  /*espacio para el lado izquierdo header y el monitor, los demas son similares*/
+  left: 0;
+  top: 0;
+  right: 0;
+  /*para que no quede espacio en los lados, queda pegado al navegador*/
+  position: fixed; }
+
+/*css3 permite anidar(algo asi como factorizar ) etiquetas*/
+>>>>>>> 32165140506031dd17f24a1d483f5cc0836fd07b
 nav ul li a {
   text-decoration: none; }
   nav ul li a:link {
@@ -18,10 +35,29 @@ nav ul li a {
     text-decoration: underline; }
 
 .dropdown {
+<<<<<<< HEAD
+=======
+  /*hace que los texto inicio registro empiecen despues de la imagen*/
+>>>>>>> 32165140506031dd17f24a1d483f5cc0836fd07b
   display: inline-block;
   float: right;
   position: fixed; }
 
+<<<<<<< HEAD
+=======
+.dropdown-content {
+  display: block;
+  /*float: left; hace que menu se vea horizontal asi: inicio registro etc */
+  float: left;
+  padding-top: 20px; }
+
+.dropdown-content li {
+  display: block;
+  float: left;
+  padding-right: 30px; }
+
+/*similar dialog header*/
+>>>>>>> 32165140506031dd17f24a1d483f5cc0836fd07b
 footer {
   background-color: #000;
   color: #fff;
@@ -39,11 +75,16 @@ section {
 
 .headerlogo {
   float: left;
+<<<<<<< HEAD
   width: 160px;
+=======
+  width: 125px;
+>>>>>>> 32165140506031dd17f24a1d483f5cc0836fd07b
   height: auto;
   margin-left: 10px;
   margin-top: 10px; }
 
+<<<<<<< HEAD
 .dropdown-content {
   display: block;
   float: left;
@@ -54,6 +95,8 @@ section {
   float: left;
   padding-right: 30px; }
 
+=======
+>>>>>>> 32165140506031dd17f24a1d483f5cc0836fd07b
 #RegistroAlta label {
   display: block;
   margin: 10px 0 0 0; }
