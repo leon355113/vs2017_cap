@@ -1,0 +1,8 @@
+﻿[
+  {
+    //ruta donde se generara el archivo scss
+    "outputFile": "Content/styles.css",
+    //ruta donde esta el archivo que va generar scss
+    "inputFile": "scss/styles.scss"
+  }
+]

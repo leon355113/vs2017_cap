@@ -1,2 +1,108 @@
-﻿body {
+﻿/*cada ves que section hace un cambio section debe recompilar a travez defs x-ms-webview conpiler*/
+header {
+    /*color del fondo utilizando variable*/
+    background-color: $site-color-header;
+    /*alto de la cabecera*/
+    height:120px;
+    /*espacio para el lado izquierdo header y el monitor, los demas son similares*/
+    left:0;
+    top:0;
+    right:0;
+    /*para que no quede espacio en los lados, queda pegado al navegador*/
+    position:fixed;
+
 }
+/*css3 permite anidar(algo asi como factorizar ) etiquetas*/
+nav{
+    ul{
+        li{
+           a{
+               text-decoration :none;
+
+               &:link{
+               text-decoration :none;
+                     }
+               &:visited{
+                   color:#fff;
+               }
+               &:hover{
+                   text-decoration:underline;
+               }
+            }
+          }
+      }
+   }
+
+.dropdown{
+    /*hace que los texto inicio registro empiecen despues de la imagen*/
+    display:inline-block;
+    float:right;
+    position:fixed;
+}
+.dropdown-content {
+    display: block;
+    /*float: left; hace que menu se vea horizontal asi: inicio registro etc */
+    float: left;
+    padding-top: 20px;
+}
+
+.dropdown-content li {
+    display: block;
+    float: left;
+    padding-right: 30px;
+}
+/*similar dialog header*/
+footer {
+    background-color: $site-color-footer;
+    color: #fff;
+    height: 60px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    padding-top: 10px;
+}
+
+section {
+    padding-top: 130px;
+    margin-bottom: 100px;
+}
+
+
+.headerlogo {
+    float: left;
+    width: 125px;
+    height: auto;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+
+#RegistroAlta label {
+    display: block;
+    margin: 10px 0 0 0;
+}
+
+#RegistroAlta02 div {
+    margin: 10px 0 0 0;
+}
+
+#RegistroAlta02 div label {
+    @include field-set-group(15%);
+}
+
+#RegistroAlta03 fieldset {
+    @include field-set-group(45%);
+}
+
+#RegistroAlta03 label {
+    display: block;
+    margin: 10px 0 0 0;
+}
+
+input:focus {
+    border: 1px solid #000;
+    background-color: #F3F3F3;
+}
+
