@@ -3,13 +3,16 @@
 <head>
     <meta charset="utf-8" />
     <title></title>
+    <!--se importa para utilizar java script-->
     <script src="../../Scripts/jquery-3.3.1.min.js"></script>
+
     <script type="text/javascript">
+
         $(document).ready(config);
 
         function config() {
 
-            debugger;
+            //debugger;
 
             $("p:first").on("click",
                 function () {
@@ -22,6 +25,13 @@
                     alert("dobleclick en el segundo parrafo");
                 }
             )
+            $("#parrafo03").on("dblclick",
+                function () {
+                    alert("dobleclick 2 en el Tercer parrafo");
+                }
+            )
+
+
         }
     </script>
 </head>
@@ -33,6 +43,10 @@
     <p id="parrafo02">
         [Hacer doble click aqui]
     </p>
+    <p id="parrafo03">
+        [Hacer doble click aqui 2]
+    </p>
+
     <div>
         <button id="btnRemoverHandler"> Remover Evento</button>
         <button id="btnAddHandler"> Agregar Evento</button>
