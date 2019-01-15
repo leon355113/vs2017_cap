@@ -1,3 +1,46 @@
+<<<<<<< HEAD
+﻿
+body {
+}
+
+header {
+    background-color: $site-color-header;
+    height: 120px;
+    left: 0;
+    top: 0;
+    right: 0;
+    position: fixed;
+}
+
+nav {
+    ul {
+        li {
+            a {
+                text-decoration: none;
+
+                &:link {
+                    text-decoration: none;
+                }
+
+                &:visited {
+                    color: #fff;
+                }
+
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}
+
+.dropdown {
+    display: inline-block;
+    float: right;
+    position: fixed;
+}
+
+=======
 ﻿/*cada ves que section hace un cambio section debe recompilar a travez defs x-ms-webview conpiler*/
 header {
     /*color del fondo utilizando variable*/
@@ -52,6 +95,7 @@ nav{
     padding-right: 30px;
 }
 /*similar dialog header*/
+>>>>>>> 32165140506031dd17f24a1d483f5cc0836fd07b
 footer {
     background-color: $site-color-footer;
     color: #fff;
@@ -69,15 +113,35 @@ section {
     margin-bottom: 100px;
 }
 
+<<<<<<< HEAD
+.headerlogo {
+    float: left;
+    width: 160px;
+=======
 
 .headerlogo {
     float: left;
     width: 125px;
+>>>>>>> 32165140506031dd17f24a1d483f5cc0836fd07b
     height: auto;
     margin-left: 10px;
     margin-top: 10px;
 }
 
+<<<<<<< HEAD
+.dropdown-content {
+    display: block;
+    float: left;
+    padding-top: 20px;
+}
+
+.dropdown-content li {
+    display: block;
+    float: left;
+    padding-right: 30px;
+}
+=======
+>>>>>>> 32165140506031dd17f24a1d483f5cc0836fd07b
 
 #RegistroAlta label {
     display: block;
