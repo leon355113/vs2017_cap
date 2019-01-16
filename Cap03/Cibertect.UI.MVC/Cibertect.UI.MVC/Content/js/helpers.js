@@ -39,7 +39,7 @@
 
                 return JSON.parse(json);
             },
-            //funciones adicionales
+            //------------------------------funciones adicionales-----------------------//
             //validar formato de fecha
             validarFormatoFecha: function (campo) {
                 var RegExPattern = /^\d{1,2}\/\d{1,2}\/\d{2,4}$/;
@@ -174,6 +174,17 @@
         } else {
             alert('Dni erroneo, formato no válido');
         }
-    }
+        },
+
+        //Solo permite introducir números.
+        soloNumeros: function (e) {
+            var key = window.event ? e.which : e.keyCode;
+            if (key < 48 || key > 57) {
+                //Usando la definición del DOM level 2, "return" NO funciona.
+                e.preventDefault();
+            }
+        }
+
+
 }
 })(window.cibertec = window.cibertec || {}); 
