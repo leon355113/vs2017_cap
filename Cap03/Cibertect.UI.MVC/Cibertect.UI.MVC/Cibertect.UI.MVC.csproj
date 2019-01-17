@@ -180,6 +180,7 @@
     <Content Include="Content\Html\RegistroAJAX.html" />
     <Content Include="Content\Html\Tablas.html" />
     <Content Include="Content\Html\localStorageSet.html" />
+    <Content Include="Content\Html\Validaciones.html" />
     <Content Include="Content\Html\UsoHelpers.html" />
     <Content Include="Content\images\logo.jpg" />
     <Content Include="Content\images\navidad.jpg" />
@@ -293,6 +294,7 @@
           <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
         </WebProjectProperties>
       </FlavorProperties>
+      <UserProperties Content_4bootstrap-theme_1min_1css_1map__JSONSchema="" />
     </VisualStudio>
   </ProjectExtensions>
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
