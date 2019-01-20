@@ -52,12 +52,21 @@ footer
     padding-top: 10px;
 }
 
-section 
+/*section 
 {
-        padding-top: 200px;
+        padding-top: 80px;
         margin-bottom: 100px;
+}*/
+#section01 {
+    padding-top: 80px;
+    margin-bottom: 100px;
+    width:45%;  
 }
-
+#section02 {
+    padding-top: 350px;
+    margin-bottom: 100px;
+    width: 45%;
+}
 .headerlogo
 {
         float: left;
@@ -97,7 +106,7 @@ section
 }
 
 #RegistroAlta03 fieldset {
-    @include field-set-group(45%);
+    @include field-set-group(55%);
 }
 
 #RegistroAlta03 label 
@@ -111,3 +120,15 @@ input:focus
         border: 1px solid #000;
         background-color: #F3F3F3;
 }
+
+#resultado, #existente {
+    background-color: red;
+    color: white;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+#resultado.ok, #existente.ok {
+    background-color: green;
+}
+

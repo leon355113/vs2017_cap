@@ -6,22 +6,283 @@
     <script src="../../Scripts/jquery-3.3.1.min.js"></script>
     <script src="../js/helpers.js"></script>
     <link href="../styles.min.css" rel="stylesheet" />
+
     <script type="text/javascript">
-        $(document).ready(config);
 
-        function config() {
-            cibertec.helpers.BloquearControls();
+        var primerslap = false;
+        var segundoslap = false;
 
-
-
-            
+        function formateafecha (fecha) {
+            var long = fecha.length;
+            var dia;
+            var mes;
+            var ano;
+            if ((long >= 2) && (primerslap == false)) {
+                dia = fecha.substr(0, 2);
+                if ((IsNumeric(dia) == true) && (dia <= 31) && (dia != "00")) { fecha = fecha.substr(0, 2) + "/" + fecha.substr(3, 7); primerslap = true; }
+                else { fecha = ""; primerslap = false; }
+            }
+            else {
+                dia = fecha.substr(0, 1);
+                if (IsNumeric(dia) == false) { fecha = ""; }
+                if ((long <= 2) && (primerslap = true)) { fecha = fecha.substr(0, 1); primerslap = false; }
+            }
+            if ((long >= 5) && (segundoslap == false)) {
+                mes = fecha.substr(3, 2);
+                if ((IsNumeric(mes) == true) && (mes <= 12) && (mes != "00")) { fecha = fecha.substr(0, 5) + "/" + fecha.substr(6, 4); segundoslap = true; }
+                else { fecha = fecha.substr(0, 3);; segundoslap = false; }
+            }
+            else { if ((long <= 5) && (segundoslap = true)) { fecha = fecha.substr(0, 4); segundoslap = false; } }
+            if (long >= 7) {
+                ano = fecha.substr(6, 4);
+                if (IsNumeric(ano) == false) { fecha = fecha.substr(0, 6); }
+                else { if (long == 10) { if ((ano == 0) || (ano < 1900) || (ano > 2100)) { fecha = fecha.substr(0, 6); } } }
+            }
+            if (long >= 10) {
+                fecha = fecha.substr(0, 10);
+                dia = fecha.substr(0, 2);
+                mes = fecha.substr(3, 2);
+                ano = fecha.substr(6, 4);
+                // Año no viciesto y es febrero y el dia es mayor a 28 
+                if ((ano % 4 != 0) && (mes == 02) && (dia > 28)) { fecha = fecha.substr(0, 2) + "/"; }
+            }
+            return (fecha);
         }
+        function IsNumeric(valor) {
+            var log = valor.length; var sw = "S";
+            for (x = 0; x < log; x++) {
+                v1 = valor.substr(x, 1);
+                v2 = parseInt(v1);
+                //Compruebo si es un valor numérico 
+                if (isNaN(v2)) { sw = "N"; }
+            }
+            if (sw == "S") { return true; } else { return false; }
+        }
+
+         function  validaDNI (dni) {
+            var numero
+            var letr
+            var letra
+            var expresion_regular_dni
+
+            expresion_regular_dni = /^\d{8}[a-zA-Z]$/;
+
+            if (expresion_regular_dni.test(dni) == true) {
+                numero = dni.substr(0, dni.length - 1);
+                letr = dni.substr(dni.length - 1, 1);
+                numero = numero % 23;
+                letra = 'TRWAGMYFPDXBNJZSQVHLCKET';
+                letra = letra.substring(numero, numero + 1);
+                if (letra != letr.toUpperCase()) {
+                    alert('Dni erroneo, la letra del NIF no se corresponde');
+                } else {
+                    alert('Dni correcto');
+                }
+            } else {
+                alert('Dni erroneo, formato no válido');
+            }
+        }
+
+        function isDNI(dni) {
+         
+            var numero, let, letra;
+            var expresion_regular_dni = /^[XYZ]?\d{5,8}[A-Z]$/;
+
+            //dni = dni.toUpperCase();
+            //dni   = dni.toUpperCase(); 
+
+            if (expresion_regular_dni.test(dni) === true) {
+                numero = dni.substr(0, dni.length - 1);
+                numero = numero.replace('X', 0);
+                numero = numero.replace('Y', 1);
+                numero = numero.replace('Z', 2);
+                let = dni.substr(dni.length - 1, 1);
+                numero = numero % 23;
+                letra = 'TRWAGMYFPDXBNJZSQVHLCKET';
+                letra = letra.substring(numero, numero + 1);
+                if (letra != let) {
+                    //alert('Dni erroneo, la letra del NIF no se corresponde');
+                    return false;
+                } else {
+                    //alert('Dni correcto');
+                    return true;
+                }
+            } else {
+                //alert('Dni erroneo, formato no válido');
+                return false;
+            }
+        }
+
+
+        function validarRUC(input) {
+            var ruc = input.value.replace(/[-.,[\]()\s]+/g, ""),
+                resultado = document.getElementById("resultado"),
+                existente = document.getElementById("existente"),
+                valido;
+
+            existente.innerHTML = "";
+
+            //Es entero?    
+            if ((ruc = Number(ruc)) && ruc % 1 === 0
+                && rucValido(ruc)) { // ⬅️ ⬅️ ⬅️ ⬅️ Acá se comprueba
+                valido = "Válido";
+                resultado.classList.add("ok");
+                obtenerDatosSUNAT(ruc);
+            } else {
+                valido = "No válido";
+                resultado.classList.remove("ok");
+            }
+
+            resultado.innerText = "RUC: " + ruc + "\nFormato: " + valido;
+        }
+
+        // Devuelve un booleano si es un RUC válido
+        // (deben ser 11 dígitos sin otro caracter en el medio)
+        function rucValido (ruc) {
+            //11 dígitos y empieza en 10,15,16,17 o 20
+            if (!(ruc >= 1e10 && ruc < 11e9
+                || ruc >= 15e9 && ruc < 18e9
+                || ruc >= 2e10 && ruc < 21e9))
+                return false;
+
+            for (var suma = -(ruc % 10 < 2), i = 0; i < 11; i++ , ruc = ruc / 10 | 0)
+                suma += (ruc % 10) * (i % 7 + (i / 7 | 0) + 1);
+            return suma % 11 === 0;
+
+        }
+
+        //Buscar datos del RUC y si existe
+        function obtenerDatosSUNAT(ruc) {
+            //Init
+            var url = "https://cors-anywhere.herokuapp.com/wmtechnology.org/Consultar-RUC/?modo=1&btnBuscar=Buscar&nruc=" + ruc,
+                existente = document.getElementById("existente"),
+                xhr = false;
+            if (window.XMLHttpRequest) //Crear XHR
+                xhr = new XMLHttpRequest();
+            else if (window.ActiveXObject)
+                xhr = new ActiveXObject("Microsoft.XMLHTTP");
+            else return false;
+            //handler para respuesta
+            xhr.onreadystatechange = function () {
+                if (xhr.readyState == 4 && xhr.status == 200) { //200 OK
+                    var doc = document.implementation.createHTMLDocument()
+                        .documentElement,
+                        res = "",
+                        txt, campos,
+                        ok = false;
+
+                    doc.innerHTML = xhr.responseText;
+                    //Sólo el texto de las clases que nos interesa
+                    campos = doc.querySelectorAll(".list-group-item");
+                    if (campos.length) {
+                        for (txt of campos)
+                            res += txt.innerText + "\n";
+                        //eliminar blancos por demás
+                        res = res.replace(/^\s+\n*|(:) *\n| +$/gm, "$1");
+                        //buscar si está el texto "ACTIVO" en el estado
+                        ok = /^Estado: *ACTIVO *$/m.test(res);
+                    } else
+                        res = "RUC: " + ruc + "\nNo existe.";
+
+                    //mostrar el texto formateado
+                    if (ok)
+                        existente.classList.add("ok");
+                    else
+                        existente.classList.remove("ok");
+                    existente.innerText = res;
+                }
+            } //falta verificar errores en conexión
+            xhr.open("POST", url, true);
+            xhr.send(null);
+        }
+        function soloNumeros (e) {
+            var key = window.event ? e.which : e.keyCode;
+            if (key < 48 || key > 57) {
+                //Usando la definición del DOM level 2, "return" NO funciona.
+                e.preventDefault();
+            }
+        }
+        function ValidarTJ(numero_tarjeta) {
+            var cadena = numero_tarjeta.toString();
+            var longitud = cadena.length;
+            var cifra = null;
+            var cifra_cad = null;
+            var suma = 0;
+            for (var i = 0; i < longitud; i += 2) {
+                cifra = parseInt(cadena.charAt(i)) * 2;
+                if (cifra > 9) {
+                    cifra_cad = cifra.toString();
+                    cifra = parseInt(cifra_cad.charAt(0)) +
+                        parseInt(cifra_cad.charAt(1));
+                }
+                suma += cifra;
+            }
+            for (var i = 1; i < longitud; i += 2) {
+                suma += parseInt(cadena.charAt(i));
+            }
+
+            if ((suma % 10) == 0) {
+                alert("Número de tarjeta correcto");
+            } else {
+                alert("El número de tarjeta no es válido");
+            }
+        }
+
+        function filterFloat(evt, input) {
+            // Backspace = 8, Enter = 13, ‘0′ = 48, ‘9′ = 57, ‘.’ = 46, ‘-’ = 43
+            var key = window.Event ? evt.which : evt.keyCode;
+            var chark = String.fromCharCode(key);
+            var tempValue = input.value + chark;
+            if (key >= 48 && key <= 57) {
+                if (filter(tempValue) === false) {
+                    return false;
+                } else {
+                    return true;
+                }
+            } else {
+                if (key == 8 || key == 13 || key == 0) {
+                    return true;
+                } else if (key == 46) {
+                    if (filter(tempValue) === false) {
+                        return false;
+                    } else {
+                        return true;
+                    }
+                } else {
+                    return false;
+                }
+            }
+        }
+        function filter(__val__) {
+            var preg = /^([0-9]+\.?[0-9]{0,2})$/;
+            if (preg.test(__val__) === true) {
+                return true;
+            } else {
+                return false;
+            }
+
+        }
+
+        function verficaDNI(dni) {
+            //debugger;
+            numero = dni.substr(0, dni.length - 1);
+            let = dni.substr(dni.length - 1, 1);
+            numero = numero % 23;
+            letra = 'TRWAGMYFPDXBNJZSQVHLCKET';
+            letra = letra.substring(numero, numero + 1);
+            //if (letra != let)
+            //    alert('Dni erroneo');
+            if (dni.length !=8)
+                alert('Dni erroneo');
+        }
+
     </script>
+
 </head>
 <body>
 
     <header>
-        <img src="Content/images/logo.jpg" class="headerlogo" />
+        <img src="../images/logo.jpg" class="headerlogo"  />
         <nav class="dropdown">
             <ul class="dropdown-content">
                 <li><a href="#">Inicio</a></li>
@@ -32,7 +293,7 @@
         </nav>
     </header>
     <h3> Registro de datos</h3>
-    <section>
+    <section id="section01" >
         <form id="RegistroAlta03">
             <fieldset>
 
@@ -42,43 +303,40 @@
 
                 <label for="Txt_Apellido">Apellidos</label>
                 <input type="text" id="Txt_Apellido" />
-
                 <label for="Txt_FechaNac">Fecha Nacimiento</label>
-                <input type="datetime" id="Txt_FechaNac" />
+                <input type="text" id="Txt_FechaNac" maxlength="10" onKeyUp="this.value=formateafecha(this.value);" placeholder="Fecha Nacimiento" />
 
                 <label for="Txt_DNI">DNI</label>
-                <input type="text" id="Txt_DNI" />
+                <input type="text" id="Txt_DNI" maxlength="8" onkeypress="return soloNumeros(event);" onblur="verficaDNI(this.value);" placeholder="Ingrese su DNI" />
 
                 <label for="Txt_RUC">RUC</label>
-                <input type="text" id="Txt_RUC" />
+                <input type="text" id="Txt_RUC"
+                       onkeypress="return soloNumeros(event);"
+                       oninput="validarRUC(this)"
+                       placeholder="Ingrese su RUC" maxlength="11">
+                <pre id="resultado"></pre>
+                <pre id="existente"></pre>
 
                 <label for="Txt_NumeroTarjeta">Numero de Tarjeta</label>
-                <input type="text" id="Txt_NumeroTarjeta" />
+                <input type="text" id="Txt_NumeroTarjeta"
+                       onblur="ValidarTJ(this)"
+                       onkeypress="return soloNumeros(event);"
+                       placeholder="Ingrese Nro Tarjeta" />
+
+                <label for="Txt_Numero">Sueldo </label>
+                <input type="text" id="Txt_Numero"
+                       onkeypress="return filterFloat(event,this);"
+                       placeholder="Ingrese Nro Decimal" />
 
                 <label for="Txt_Contraseña">Contraseña</label>
                 <input type="password" id="Txt_Contraseña" />
 
             </fieldset>
 
-            <fieldset>
-                <legend>Datos del Contacto:</legend>
-                <label for="Txt_Telefono">Telefono</label>
-                <input type="text" id="Txt_Telefono" />
-
-                <label for="Txt_Email">Email</label>
-                <input type="text" id="Txt_Email" />
-
-                <label for="Txt_Direccion">Direccion</label>
-                <input type="text" id="Txt_Direccion" />
-
-                <label for="Txt_CodigoPostal">Codigo postal</label>
-                <input type="text" id="Txt_CodigoPostal" />
-            </fieldset>
-
 
         </form>
     </section>
-    <section>
+    <section id="section02">
         <p>
             <button type="submit">Grabar datos</button>
             <button type="button" id="btn_nuevo">Nuevo</button>
