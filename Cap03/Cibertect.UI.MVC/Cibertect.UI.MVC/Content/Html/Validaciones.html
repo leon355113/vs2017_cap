@@ -9,6 +9,7 @@
 
     <script type="text/javascript">
 
+<<<<<<< HEAD
         var primerslap = false;
         var segundoslap = false;
 
@@ -111,6 +112,11 @@
                 //alert('Dni erroneo, formato no válido');
                 return false;
             }
+=======
+        function config() {
+            cibertec.helpers.BloquearControls();
+            
+>>>>>>> fff48183cf02dfc34f67b671674d2b2f0743a843
         }
 
 
@@ -292,6 +298,7 @@
             </ul>
         </nav>
     </header>
+<<<<<<< HEAD
     <h3> Registro de datos</h3>
     <section id="section01" >
         <form id="RegistroAlta03">
@@ -342,9 +349,66 @@
             <button type="button" id="btn_nuevo">Nuevo</button>
         </p>
     </section>
+=======
+    <section>
+
+        <h3> Registro de datos </h3>
+
+        <form id="RegistroAlta03">
+
+            <fieldset>
+
+                <legend>Alta de servicios:</legend>
+                <label for="Txt_Nombre">Nombres</label>
+                <input type="text" id="Txt_Nombre" />
+
+                <label for="Txt_Apellido">Apellidos</label>
+                <input type="text" id="Txt_Apellido" />
+
+                <label for="Txt_FechaNac">Fecha Nacimiento</label>
+                <input type="datetime" id="Txt_FechaNac" />
+
+                <label for="Txt_DNI">DNI</label>
+                <input type="text" id="Txt_DNI" />
+
+                <label for="Txt_RUC">RUC</label>
+                <input type="text" id="Txt_RUC" />
+
+                <label for="Txt_NumeroTarjeta">Numero de Tarjeta</label>
+                <input type="text" id="Txt_NumeroTarjeta" />
+
+                <label for="Txt_Contraseña">Contraseña</label>
+                <input type="password" id="Txt_Contraseña" />
+
+            </fieldset>
+
+            <fieldset>
+                <legend>Datos del Contacto:</legend>
+                <label for="Txt_Telefono">Telefono</label>
+                <input type="text" id="Txt_Telefono" />
+
+                <label for="Txt_Email">Email</label>
+                <input type="text" id="Txt_Email" />
+
+                <label for="Txt_Direccion">Direccion</label>
+                <input type="text" id="Txt_Direccion" />
+
+                <label for="Txt_CodigoPostal">Codigo postal</label>
+                <input type="text" id="Txt_CodigoPostal" />
+            </fieldset>
+
+            <p>
+                <button type="submit">Grabar datos</button>
+                <button type="button" id="btn_nuevo">Nuevo</button>
+            </p>
+
+
+        </form>
+    </section>
+>>>>>>> fff48183cf02dfc34f67b671674d2b2f0743a843
     <footer>
         Nuestra dirección
-        &copy; Todos los derechos reservados a Cibertec
+        &copy; Todos los derechos reservados a 
     </footer>
 
 
