@@ -1,0 +1,5 @@
+C:\WebVisualStudio2017\VisualStudio_ACCJ\Cap04\ProyectoNuevo\SlnVentas\App.Entities.Base\bin\Debug\App.Entities.Base.dll
+C:\WebVisualStudio2017\VisualStudio_ACCJ\Cap04\ProyectoNuevo\SlnVentas\App.Entities.Base\bin\Debug\App.Entities.Base.pdb
+C:\WebVisualStudio2017\VisualStudio_ACCJ\Cap04\ProyectoNuevo\SlnVentas\App.Entities.Base\obj\Debug\App.Entities.Base.csproj.CoreCompileInputs.cache
+C:\WebVisualStudio2017\VisualStudio_ACCJ\Cap04\ProyectoNuevo\SlnVentas\App.Entities.Base\obj\Debug\App.Entities.Base.dll
+C:\WebVisualStudio2017\VisualStudio_ACCJ\Cap04\ProyectoNuevo\SlnVentas\App.Entities.Base\obj\Debug\App.Entities.Base.pdb

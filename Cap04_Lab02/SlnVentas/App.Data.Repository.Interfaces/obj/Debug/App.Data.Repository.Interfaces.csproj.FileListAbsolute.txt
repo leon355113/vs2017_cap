@@ -1,0 +1,14 @@
+C:\WebVisualStudio2017\VisualStudio_ACCJ\Cap04\ProyectoNuevo\SlnVentas\App.Data.Repository.Interfaces\bin\Debug\App.Data.Repository.Interfaces.dll
+C:\WebVisualStudio2017\VisualStudio_ACCJ\Cap04\ProyectoNuevo\SlnVentas\App.Data.Repository.Interfaces\bin\Debug\App.Data.Repository.Interfaces.pdb
+C:\WebVisualStudio2017\VisualStudio_ACCJ\Cap04\ProyectoNuevo\SlnVentas\App.Data.Repository.Interfaces\bin\Debug\App.Data.DataBase.dll
+C:\WebVisualStudio2017\VisualStudio_ACCJ\Cap04\ProyectoNuevo\SlnVentas\App.Data.Repository.Interfaces\bin\Debug\App.Entities.Base.dll
+C:\WebVisualStudio2017\VisualStudio_ACCJ\Cap04\ProyectoNuevo\SlnVentas\App.Data.Repository.Interfaces\bin\Debug\EntityFramework.dll
+C:\WebVisualStudio2017\VisualStudio_ACCJ\Cap04\ProyectoNuevo\SlnVentas\App.Data.Repository.Interfaces\bin\Debug\App.Data.DataBase.pdb
+C:\WebVisualStudio2017\VisualStudio_ACCJ\Cap04\ProyectoNuevo\SlnVentas\App.Data.Repository.Interfaces\bin\Debug\App.Data.DataBase.dll.config
+C:\WebVisualStudio2017\VisualStudio_ACCJ\Cap04\ProyectoNuevo\SlnVentas\App.Data.Repository.Interfaces\bin\Debug\App.Entities.Base.pdb
+C:\WebVisualStudio2017\VisualStudio_ACCJ\Cap04\ProyectoNuevo\SlnVentas\App.Data.Repository.Interfaces\bin\Debug\EntityFramework.xml
+C:\WebVisualStudio2017\VisualStudio_ACCJ\Cap04\ProyectoNuevo\SlnVentas\App.Data.Repository.Interfaces\obj\Debug\App.Data.Repository.Interfaces.csprojAssemblyReference.cache
+C:\WebVisualStudio2017\VisualStudio_ACCJ\Cap04\ProyectoNuevo\SlnVentas\App.Data.Repository.Interfaces\obj\Debug\App.Data.Repository.Interfaces.csproj.CoreCompileInputs.cache
+C:\WebVisualStudio2017\VisualStudio_ACCJ\Cap04\ProyectoNuevo\SlnVentas\App.Data.Repository.Interfaces\obj\Debug\App.Data.Repository.Interfaces.csproj.CopyComplete
+C:\WebVisualStudio2017\VisualStudio_ACCJ\Cap04\ProyectoNuevo\SlnVentas\App.Data.Repository.Interfaces\obj\Debug\App.Data.Repository.Interfaces.dll
+C:\WebVisualStudio2017\VisualStudio_ACCJ\Cap04\ProyectoNuevo\SlnVentas\App.Data.Repository.Interfaces\obj\Debug\App.Data.Repository.Interfaces.pdb

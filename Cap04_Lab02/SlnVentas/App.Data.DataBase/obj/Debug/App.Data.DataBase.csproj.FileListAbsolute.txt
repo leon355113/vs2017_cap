@@ -1,0 +1,14 @@
+C:\WebVisualStudio2017\VisualStudio_ACCJ\Cap04\ProyectoNuevo\SlnVentas\App.Data.DataBase\obj\Debug\App.Data.DataBase.csprojAssemblyReference.cache
+C:\WebVisualStudio2017\VisualStudio_ACCJ\Cap04\ProyectoNuevo\SlnVentas\App.Data.DataBase\obj\Debug\App.Data.DataBase.csproj.CoreCompileInputs.cache
+C:\WebVisualStudio2017\VisualStudio_ACCJ\Cap04\ProyectoNuevo\SlnVentas\App.Data.DataBase\bin\Debug\App.Data.DataBase.dll.config
+C:\WebVisualStudio2017\VisualStudio_ACCJ\Cap04\ProyectoNuevo\SlnVentas\App.Data.DataBase\bin\Debug\App.Data.DataBase.dll
+C:\WebVisualStudio2017\VisualStudio_ACCJ\Cap04\ProyectoNuevo\SlnVentas\App.Data.DataBase\bin\Debug\App.Data.DataBase.pdb
+C:\WebVisualStudio2017\VisualStudio_ACCJ\Cap04\ProyectoNuevo\SlnVentas\App.Data.DataBase\bin\Debug\App.Entities.Base.dll
+C:\WebVisualStudio2017\VisualStudio_ACCJ\Cap04\ProyectoNuevo\SlnVentas\App.Data.DataBase\bin\Debug\EntityFramework.dll
+C:\WebVisualStudio2017\VisualStudio_ACCJ\Cap04\ProyectoNuevo\SlnVentas\App.Data.DataBase\bin\Debug\EntityFramework.SqlServer.dll
+C:\WebVisualStudio2017\VisualStudio_ACCJ\Cap04\ProyectoNuevo\SlnVentas\App.Data.DataBase\bin\Debug\App.Entities.Base.pdb
+C:\WebVisualStudio2017\VisualStudio_ACCJ\Cap04\ProyectoNuevo\SlnVentas\App.Data.DataBase\bin\Debug\EntityFramework.xml
+C:\WebVisualStudio2017\VisualStudio_ACCJ\Cap04\ProyectoNuevo\SlnVentas\App.Data.DataBase\bin\Debug\EntityFramework.SqlServer.xml
+C:\WebVisualStudio2017\VisualStudio_ACCJ\Cap04\ProyectoNuevo\SlnVentas\App.Data.DataBase\obj\Debug\App.Data.DataBase.csproj.CopyComplete
+C:\WebVisualStudio2017\VisualStudio_ACCJ\Cap04\ProyectoNuevo\SlnVentas\App.Data.DataBase\obj\Debug\App.Data.DataBase.dll
+C:\WebVisualStudio2017\VisualStudio_ACCJ\Cap04\ProyectoNuevo\SlnVentas\App.Data.DataBase\obj\Debug\App.Data.DataBase.pdb
