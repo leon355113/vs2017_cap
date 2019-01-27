@@ -1,0 +1,121 @@
+﻿header {
+  background-color: #1b327e;
+  height: 110px;
+  left: 0;
+  top: 0;
+  right: 0;
+  position: fixed; }
+
+#titulo {
+  text-align: center;
+  color: snow;
+  display: block; }
+
+.headerlogo {
+  float: left;
+  width: 110px;
+  height: auto;
+  margin-left: 10px;
+  margin-top: 10px;
+  top: 0;
+  display: block; }
+
+#divcontenido {
+  height: 750px;
+  width: 100%;
+  background: #d8d8d8; }
+
+#divizquierda {
+  height: 750px;
+  width: 50%;
+  background: #d8d8d8;
+  border-bottom: dotted;
+  padding-bottom: 10px;
+  border-bottom-width: medium; }
+
+#divderecha {
+  height: 750px;
+  width: 70%;
+  background: #d8d8d8; }
+
+nav ul li a {
+  text-decoration: none; }
+  nav ul li a:link {
+    text-decoration: none; }
+  nav ul li a:visited {
+    color: #fff; }
+  nav ul li a:hover {
+    text-decoration: underline; }
+
+footer {
+  background-color: #1b327e;
+  color: #fff;
+  height: 60px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  padding-top: 10px; }
+
+#section01 {
+  padding-top: 80px;
+  margin-bottom: 100px;
+  width: 45%; }
+
+#section02 {
+  padding-top: 350px;
+  margin-bottom: 100px;
+  width: 45%; }
+
+.dropdown {
+  display: inline-block;
+  float: right;
+  position: fixed; }
+
+#menu {
+  display: block;
+  float: left;
+  padding-top: 20px; }
+
+.dropdown-content {
+  display: block;
+  float: left;
+  padding-top: 20px; }
+
+.dropdown-content li {
+  display: block;
+  float: left;
+  padding-right: 30px; }
+
+#RegistroAlta label {
+  display: block;
+  margin: 10px 0 0 0; }
+
+#RegistroAlta02 div {
+  margin: 10px 0 0 0; }
+
+#RegistroAlta02 div label {
+  float: left;
+  width: 15%; }
+
+#RegistroAlta03 fieldset {
+  float: left;
+  width: 55%; }
+
+#RegistroAlta03 label {
+  display: block;
+  margin: 10px 0 0 0; }
+
+input:focus {
+  border: 1px solid #000;
+  background-color: #F3F3F3; }
+
+#resultado, #existente {
+  background-color: red;
+  color: white;
+  font-weight: bold;
+  margin-top: 20px; }
+
+#resultado.ok, #existente.ok {
+  background-color: green; }
