@@ -1,4 +1,5 @@
-﻿using App.Data.Repository.Interfaces;
+﻿using App.Data.DataBase;
+using App.Data.Repository.Interfaces;
 using System;
 using System.Collections.Generic;
 using System.Data.Entity;
@@ -8,13 +9,24 @@ using System.Threading.Tasks;
 
 namespace App.Data.Repository
 {
-    public class AppUnitOfWork : IAppUnitOfWork
+    public class AppUnitOfWork : IAppUnitOfWork, IDisposable
     {
         private readonly DbContext _context;
+
+        public AppUnitOfWork()
+        {
+            _context = new AppModel();
+            CreateRepositories();
+        }
 
         public AppUnitOfWork(DbContext context)
         {
             _context = context;
+            CreateRepositories();
+        }
+
+        private void CreateRepositories()
+        {
             this.CategoriaRepository = new CategoriaRepository(_context);
         }
 
