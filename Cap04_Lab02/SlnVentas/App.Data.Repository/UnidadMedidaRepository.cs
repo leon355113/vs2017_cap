@@ -13,7 +13,7 @@ namespace App.Data.Repository
     {
         public UnidadMedidaRepository(DbContext context):base(context)
         {
-
+            //kl
         }
 
     }
