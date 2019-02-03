@@ -1,0 +1,49 @@
+﻿@model  App.Entities.Base.Categoria
+@{
+    ViewBag.Title = "Create";
+}
+
+<h2>Crear Categoría</h2>
+
+@*Sin Html Helpers*@
+@*<form action="/Categoria/Create" method="post">
+        <label>Nombre</label><input name="nombre"/> <br />
+        <label>Descripción</label><input name="descripcion"/> <br />
+
+        <button class="btn btn-primary btn-md">Guardar</button>
+    </form>*@
+
+@*Con Html Helpers*@
+
+@using (Html.BeginForm())
+{
+<div class="form-horizontal">
+    Crear caja oculta  para edicion y asi pueda viajar el id
+    @Html.HiddenFor(item=> item.CategoriaID)
+
+    <div class="form-group">
+        <label class="col-sm-2 control-label">Nombre</label>
+        <div class="col-sm-10">
+            @Html.EditorFor(model => model.Nombre, new { htmlAttributes = new { @class = "form-control" } })
+        </div>
+
+    </div>
+ 
+    <div class="form-group">
+        <label class="col-sm-2 control-label">Descripción</label>
+        <div class="col-sm-10">
+            @Html.EditorFor(model => model.Descripcion, new { htmlAttributes = new { @class = "form-control" } })
+        </div>    
+    </div>
+
+    <div class="form-group">
+        <div class="col-sm-offset-2 col-sm-10">
+            <button class="btn btn-primary btn-md">Guardar</button>
+        </div>
+    </div>
+    
+</div>
+  
+}
+
+

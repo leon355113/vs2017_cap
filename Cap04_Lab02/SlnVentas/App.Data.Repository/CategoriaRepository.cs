@@ -13,7 +13,7 @@ namespace App.Data.Repository
     {
         public CategoriaRepository(DbContext context):base(context)
         {
-
+            //falta
         }
     }
 }

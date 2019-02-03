@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -12,7 +13,8 @@ namespace App.Data.Repository.Interfaces
         void Update(TEntity entity);
         void Remove(TEntity entity);
         TEntity GetBydId(int id);
-        IEnumerable<TEntity> GetAll(int id);
+        IEnumerable<TEntity> GetAll(
+            Expression<Func<TEntity,bool>> predicate=null);//Se coloca null porque es un parametro opcional
         int Count();
 
     }

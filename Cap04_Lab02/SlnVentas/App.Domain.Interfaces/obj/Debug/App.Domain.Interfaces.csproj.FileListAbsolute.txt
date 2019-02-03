@@ -1,0 +1,9 @@
+C:\WebVisualStudio2017\VisualStudio_ACCJ\Cap04\ProyectoNuevo\SlnVentas\App.Domain.Interfaces\bin\Debug\App.Domain.Interfaces.dll
+C:\WebVisualStudio2017\VisualStudio_ACCJ\Cap04\ProyectoNuevo\SlnVentas\App.Domain.Interfaces\bin\Debug\App.Domain.Interfaces.pdb
+C:\WebVisualStudio2017\VisualStudio_ACCJ\Cap04\ProyectoNuevo\SlnVentas\App.Domain.Interfaces\bin\Debug\App.Entities.Base.dll
+C:\WebVisualStudio2017\VisualStudio_ACCJ\Cap04\ProyectoNuevo\SlnVentas\App.Domain.Interfaces\bin\Debug\App.Entities.Base.pdb
+C:\WebVisualStudio2017\VisualStudio_ACCJ\Cap04\ProyectoNuevo\SlnVentas\App.Domain.Interfaces\obj\Debug\App.Domain.Interfaces.csprojAssemblyReference.cache
+C:\WebVisualStudio2017\VisualStudio_ACCJ\Cap04\ProyectoNuevo\SlnVentas\App.Domain.Interfaces\obj\Debug\App.Domain.Interfaces.csproj.CoreCompileInputs.cache
+C:\WebVisualStudio2017\VisualStudio_ACCJ\Cap04\ProyectoNuevo\SlnVentas\App.Domain.Interfaces\obj\Debug\App.Domain.Interfaces.csproj.CopyComplete
+C:\WebVisualStudio2017\VisualStudio_ACCJ\Cap04\ProyectoNuevo\SlnVentas\App.Domain.Interfaces\obj\Debug\App.Domain.Interfaces.dll
+C:\WebVisualStudio2017\VisualStudio_ACCJ\Cap04\ProyectoNuevo\SlnVentas\App.Domain.Interfaces\obj\Debug\App.Domain.Interfaces.pdb

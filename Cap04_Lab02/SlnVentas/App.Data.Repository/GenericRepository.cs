@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Data.Entity;
 using System.Linq;
+using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
 using App.Data.Repository.Interfaces;
@@ -27,9 +28,18 @@ namespace App.Data.Repository
            return this.context.Set<TEntity>().Count();
         }
 
-        public IEnumerable<TEntity> GetAll(int id)
+        public IEnumerable<TEntity> GetAll(Expression<Func<TEntity, bool>> predicate = null  )
         {
-            return this.context.Set<TEntity>().ToList();
+            var result = new List<TEntity>();
+            if (predicate != null)
+            {
+                result = this.context.Set<TEntity>().Where(predicate).ToList();
+            }
+            else
+            {
+                result = this.context.Set<TEntity>().ToList();
+            }
+            return result;
         }
 
         public TEntity GetBydId(int id)
