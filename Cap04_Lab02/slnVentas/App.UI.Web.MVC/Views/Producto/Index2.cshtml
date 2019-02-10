@@ -1,34 +1,30 @@
-﻿@model  IEnumerable<App.Entities.Base.Producto>
-
+﻿@model IEnumerable<App.Entities.Base.Producto>
 @{
     ViewBag.Title = "Index";
 }
-
-<h2>Lista de productos</h2>
-
+<h2>Lista de Productos</h2>
 @using (Html.BeginForm())
 {
-    <input name="filterByName" class="form-control" value="@ViewBag.filterByName" />
+    <label>Buscar por Nombre</label>
+    <input id="filterByName" name="filterByName" class="form-control" value="@ViewBag.filterByName" />
     <br />
-    <button class="btn btn-primary">Buscar por Nombre</button>
+    <label>Buscar por Categoria</label>
 
-    <input name="filterByCategoria" class="form-control" />
-    @Html.DropDownList("FilterByCategoria", new SelectList(ViewBag.Categoria, "CategoriaId", "Nombre"),"Todos"
-    , new {@class ="form-control"} )
+    @Html.DropDownList("filterByCategoria", new SelectList(ViewBag.Categorias, "CategoriaID", "Nombre"), "Todos", new { @class = "form-control" })
+
     <br />
+    <label>Buscar por Marca</label>
 
-    <button class="btn btn-primary"  type="button" id="btnConsultar" >Buscar </button>
+    @Html.DropDownList("filterByMarca", new SelectList(ViewBag.Marcas, "MarcaID", "Nombre"), "Todos", new { @class = "form-control" })
+    <br />
+    <button class="btn btn-primary btn-sm" type="button" id="btnConsultar">Buscar</button>
+
 }
-
-<div id="resultado" >
-
-
+<div id="resultado">
 </div>
-
-@section ScriptsAdicionales{
- <script src="~/Scripts/mustache.min.js"></script>
- <script type="text/javascript" >
-
+@section scriptsAdicionales
+{
+    <script type="text/javascript">
      $(document).ready(configInit);
 
      function configInit() {
@@ -36,21 +32,18 @@
      }
 
      function buscar() {
-         $.post(("@Url.Action("Index2Buscar","Producto")"),
+         //Funciones jquery ajax
+         $.post("@Url.Action("Index2Buscar", "Producto")",
              {
-                 filterByname: $("#filterByName").val(),
+                 filterByName: $("#filterByName").val(),
                  filterByCategoria: $("#filterByCategoria").val(),
+                 filterByMarca: $("#filterByMarca").val()
              },
-
              function (response) {
-                 $("#resultado").htlml(response);
+                 //con .html inyectamos todo el html que llega
+                 $("#resultado").html(response);
              }
          )
      }
-
-
- </script>
-}
-
-
-
+    </script>
+}    

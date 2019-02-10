@@ -1,51 +1,46 @@
-﻿@model  IEnumerable<App.Entities.Base.Producto>
-
+﻿
+@model IEnumerable<App.Entities.Base.Producto>
 @{
     ViewBag.Title = "Index";
 }
-
-<h2>Lista de productos</h2>
-
+<h2>Lista de Productos</h2>
 @using (Html.BeginForm())
 {
+    <label>Buscar por Nombre</label>
     <input name="filterByName" class="form-control" value="@ViewBag.filterByName" />
     <br />
-    <button class="btn btn-primary">Buscar por Nombre</button>
+    <label>Buscar por Categoria</label>
 
-    <input name="filterByCategoria" class="form-control" />
-    @Html.DropDownList("FilterByCategoria", new SelectList(ViewBag.Categoria, "CategoriaId", "Nombre"),"Todos"
-    , new {@class ="form-control"} )
+    @Html.DropDownList("filterByCategoria", new SelectList(ViewBag.Categorias, "CategoriaID", "Nombre"), "Todos", new { @class = "form-control" })
+
     <br />
+    <label>Buscar por Marca</label>
 
-    <button class="btn btn-primary">Buscar por Categoria</button>
+    @Html.DropDownList("filterByMarca", new SelectList(ViewBag.Marcas, "MarcaID", "Nombre"), "Todos", new { @class = "form-control" })
+    <br />
+    <button class="btn btn-info btn-sm">Buscar</button>
+
 }
-
-<table class="table">
+<table class="table table-bordered table-condensed table-striped input-sm">
     <tr>
-        <td>Código</td>
-        <td>Nombre</td>
-        <td>Categoría</td>
-        <td>Marca</td>
-        <td>Precio Mayor</td>
-        <td>Precio Menor</td>
-        <td>Stock Actual</td>
+        <th>Código</th>
+        <th>Nombre</th>
+        <th>Categoria </th>
+        <th>Marca</th>
+        <th>Precio Mayor</th>
+        <th>Precio Menor</th>
+        <th>Stock Actual</th>
     </tr>
-
     @foreach (var item in Model)
-            {
-    <tr>
-        <td>@item.ProductoCode</td>
-        <td>@item.Nombre</td>
-        <td>@item.Categoria.Nombre</td>
-        <td>@item.Marca.Nombre</td>
-        <td>@item.PrecioMayor</td>
-        <td>@item.PrecioMenor</td>
-        <td>@item.StockActual</td>
-    </tr>
-             }
+    {
+        <tr>
+            <td>@item.ProductoCode</td>
+            <td>@item.Nombre</td>
+            <td>@item.Categoria.Nombre</td>
+            <td>@item.Marca.Nombre</td>
+            <td>@item.PrecioMayor</td>
+            <td>@item.PrecioMenor</td>
+            <td>@item.StockActual</td>
+        </tr>
+    }
 </table>
-
-
-
-
-

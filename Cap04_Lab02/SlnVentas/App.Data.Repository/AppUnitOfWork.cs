@@ -30,11 +30,12 @@ namespace App.Data.Repository
         {
              this.CategoriaRepository = new CategoriaRepository(_context);
             this.ProductoRepository = new ProductoRepository(_context);
+            this.MarcaRepository = new MarcaRepository(_context);
         }
 
         public ICategoriaRepository CategoriaRepository { get; set; }
         public IProductoRepository ProductoRepository { get; set; }
-
+        public IMarcaRepository MarcaRepository { get; set; }
         public int Complete()
         {
             return _context.SaveChanges();

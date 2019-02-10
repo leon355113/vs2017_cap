@@ -48,6 +48,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AppUnitOfWork.cs" />
+    <Compile Include="MarcaRepository.cs" />
     <Compile Include="ProductoRepository.cs" />
     <Compile Include="CategoriaRepository.cs" />
     <Compile Include="GenericRepository.cs" />
