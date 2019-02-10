@@ -1,0 +1,76 @@
+﻿@model  IEnumerable<App.Entities.Base.Producto>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Lista de productos</h2>
+
+@using (Html.BeginForm())
+{
+    <input name="filterByName" class="form-control" value="@ViewBag.filterByName" />
+    <br />
+    <button class="btn btn-primary">Buscar por Nombre</button>
+
+    <input name="filterByCategoria" class="form-control" />
+    @Html.DropDownList("FilterByCategoria", new SelectList(ViewBag.Categoria, "CategoriaId", "Nombre"),"Todos"
+    , new {@class ="form-control"} )
+    <br />
+
+    <button class="btn btn-primary"  type="button" id="btnConsultar" >Buscar </button>
+}
+
+<div id="resultado" >
+
+
+</div>
+
+@section ScriptsAdicionales{
+<script src="~/Scripts/mustache.min.js"></script>
+
+<script id="resultadoTable" type="x-tmpl-mustache">
+
+    <table>
+        <tr>
+            <td></td>
+            <td></td>
+        </tr>
+        {{#resultado}}
+
+    </table>
+
+</script>
+ <script type="text/javascript" >
+
+     $(document).ready(configInit);
+
+     function configInit() {
+         $("#btnConsultar").on("click", buscar);
+     }
+
+     function buscar() {
+         $.post(("@Url.Action("Index3Buscar","Producto")"),
+             {
+                 filterByname: $("#filterByName").val(),
+                 filterByCategoria: $("#filterByCategoria").val(),
+             },
+
+             function (response) {
+                 var template = $("#resultadotable").html();
+                 Mustache.parse(template)];
+                 var htmlrender = Mustache.render(template,
+                     {
+                         Resultado: response
+                     }
+                 )
+                $()
+             }
+         )
+     }
+
+
+ </script>
+}
+
+
+

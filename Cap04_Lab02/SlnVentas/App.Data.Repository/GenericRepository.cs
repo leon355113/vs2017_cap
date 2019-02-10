@@ -1,15 +1,15 @@
-﻿using System;
+﻿using App.Data.Repository.Interfaces;
+using System;
 using System.Collections.Generic;
 using System.Data.Entity;
 using System.Linq;
 using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
-using App.Data.Repository.Interfaces;
 
 namespace App.Data.Repository
 {
-    public class GenericRepository<TEntity> : IGenericRepository<TEntity> where TEntity : class
+    public class GenericRepository<TEntity> :IGenericRepository<TEntity> where TEntity : class
     {
         protected readonly DbContext context;
 
@@ -25,24 +25,42 @@ namespace App.Data.Repository
 
         public int Count()
         {
-           return this.context.Set<TEntity>().Count();
+            return this.context.Set<TEntity>().Count();
         }
 
-        public IEnumerable<TEntity> GetAll(Expression<Func<TEntity, bool>> predicate = null  )
+        /// <summary>
+        /// Metodo para obtener una lista de datos por filtros
+        /// </summary>
+        /// <param name="predicate"></param>
+        /// <param name="includes">
+        /// El include, incluye las tablas que estan relacionada a 
+        /// la tabla principal, ejemplo "Marca,Categoria,UnidadMedida"
+        /// </param>
+        /// <returns></returns>
+        public IEnumerable<TEntity> GetAll(Expression<Func<TEntity, bool>> predicate = null,string includes = null)
         {
             var result = new List<TEntity>();
-            if (predicate != null)
+            IQueryable<TEntity> query = this.context.Set<TEntity>();
+
+            //Inludes
+            if(includes!=null)
             {
-                result = this.context.Set<TEntity>().Where(predicate).ToList();
+                foreach(var tableInclude in includes.Split(','))
+                {
+                    query = query.Include(tableInclude);
+                }
             }
-            else
+
+            //Where
+            if(predicate !=null)
             {
-                result = this.context.Set<TEntity>().ToList();
+                query = query.Where(predicate);
             }
-            return result;
+
+            return query.ToList();
         }
 
-        public TEntity GetBydId(int id)
+        public TEntity GetById(int id)
         {
             return this.context.Set<TEntity>().Find(id);
         }

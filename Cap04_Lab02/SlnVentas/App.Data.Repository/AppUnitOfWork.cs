@@ -11,6 +11,7 @@ namespace App.Data.Repository
 {
     public class AppUnitOfWork : IAppUnitOfWork, IDisposable
     {
+
         private readonly DbContext _context;
 
         public AppUnitOfWork()
@@ -22,19 +23,17 @@ namespace App.Data.Repository
         public AppUnitOfWork(DbContext context)
         {
             _context = context;
-            CreateRepositories();
+             CreateRepositories();
         }
 
         private void CreateRepositories()
         {
-            this.CategoriaRepository = new CategoriaRepository(_context);
-            this.UnidadMedidaRepository = new UnidadMedidaRepository(_context);
-            this.MarcaRepository = new MarcaRepository(_context);
+             this.CategoriaRepository = new CategoriaRepository(_context);
+            this.ProductoRepository = new ProductoRepository(_context);
         }
 
-        public ICategoriaRepository CategoriaRepository { get ; set; }
-        public IMarcaRepository MarcaRepository { get ; set ; }
-        public IUnidadMedidaRepository UnidadMedidaRepository { get; set; }
+        public ICategoriaRepository CategoriaRepository { get; set; }
+        public IProductoRepository ProductoRepository { get; set; }
 
         public int Complete()
         {

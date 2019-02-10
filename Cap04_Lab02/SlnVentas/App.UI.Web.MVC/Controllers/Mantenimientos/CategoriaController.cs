@@ -1,16 +1,17 @@
 ﻿using App.Domain.Services;
+using App.Domain.Services.Interfaces;
+using App.Entities.Base;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
-using App.Entities.Base;
-          
+
 namespace App.UI.Web.MVC.Controllers.Mantenimientos
 {
     public class CategoriaController : Controller
     {
-        private readonly CategoriaService categoriaServices;
+        private readonly ICategoriaService categoriaServices;
 
         public CategoriaController()
         {
@@ -20,7 +21,6 @@ namespace App.UI.Web.MVC.Controllers.Mantenimientos
         // GET: Categoria
         public ActionResult Index()
         {
-            //El modelo vendria a ser una lista, una entidad, por lo tanto a nivel de la vista debe recepcionar el mismo modelo que se envia sea entidad o lista
             var model = categoriaServices.GetAll("");
             return View(model);
         }
@@ -37,10 +37,10 @@ namespace App.UI.Web.MVC.Controllers.Mantenimientos
             return RedirectToAction("Index");
         }
 
-        public ActionResult Edit(int id)
+       public ActionResult Edit(int id)
         {
             var model = categoriaServices.GetById(id);
-            return View("Create",model);//Reutilizando la vista create para la edicion
+            return View("Create",model);
         }
 
         [HttpPost]

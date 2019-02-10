@@ -7,8 +7,7 @@ using System.Threading.Tasks;
 
 namespace App.Data.Repository.Interfaces
 {
-  public interface ICategoriaRepository:IGenericRepository<Categoria>
+    public interface ICategoriaRepository : IGenericRepository<Categoria>
     {
-
     }
 }

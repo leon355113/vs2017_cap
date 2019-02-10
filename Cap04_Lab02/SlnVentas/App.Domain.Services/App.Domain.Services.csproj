@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{30A2335E-D9FB-4AD6-B9B3-831F2E988110}</ProjectGuid>
+    <ProjectGuid>{BB3C6F74-80FB-4C8F-986C-89F6420EEE97}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>App.Domain.Services</RootNamespace>
@@ -40,26 +40,25 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ProductoService.cs" />
     <Compile Include="CategoriaService.cs" />
-    <Compile Include="MarcaService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="UnidadMedidaService.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\App.Data.Repository.Interfaces\App.Data.Repository.Interfaces.csproj">
-      <Project>{83d6772e-efa8-4a27-8a08-8137707454b7}</Project>
+      <Project>{75f4274e-c1b3-483d-b8a6-5dd289180b68}</Project>
       <Name>App.Data.Repository.Interfaces</Name>
     </ProjectReference>
     <ProjectReference Include="..\App.Data.Repository\App.Data.Repository.csproj">
-      <Project>{3715EF9A-7376-44C6-A4E1-8F724269A82B}</Project>
+      <Project>{AE87FD62-2AF2-451D-8A90-CD099E77660E}</Project>
       <Name>App.Data.Repository</Name>
     </ProjectReference>
-    <ProjectReference Include="..\App.Domain.Interfaces\App.Domain.Interfaces.csproj">
-      <Project>{B4A83495-12A6-4FA4-A656-5CA93F14AB58}</Project>
-      <Name>App.Domain.Interfaces</Name>
+    <ProjectReference Include="..\App.Domain.Services.Interfaces\App.Domain.Services.Interfaces.csproj">
+      <Project>{B5AE0FB2-FB12-4A70-ADAB-6D0F812B25EB}</Project>
+      <Name>App.Domain.Services.Interfaces</Name>
     </ProjectReference>
     <ProjectReference Include="..\App.Entities.Base\App.Entities.Base.csproj">
-      <Project>{621D226C-C7BC-4D71-BFDC-034F369E3420}</Project>
+      <Project>{E1ED223D-2C98-499D-A406-A5FE8D4AF2A7}</Project>
       <Name>App.Entities.Base</Name>
     </ProjectReference>
   </ItemGroup>

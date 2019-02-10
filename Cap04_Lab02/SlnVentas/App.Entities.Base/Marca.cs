@@ -17,6 +17,7 @@ namespace App.Entities.Base
 
         public int MarcaID { get; set; }
 
+        [Required]
         [StringLength(100)]
         public string Nombre { get; set; }
 

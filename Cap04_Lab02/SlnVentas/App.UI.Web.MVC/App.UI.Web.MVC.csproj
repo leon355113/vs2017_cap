@@ -9,7 +9,7 @@
     <ProductVersion>
     </ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{D18CF665-885D-4517-A3AC-8F5EE6F4D6AC}</ProjectGuid>
+    <ProjectGuid>{AE0976E8-835F-4F5B-B97A-0BC77A18FADE}</ProjectGuid>
     <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
@@ -156,8 +156,7 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\Mantenimientos\CategoriaController.cs" />
-    <Compile Include="Controllers\Mantenimientos\MarcaController.cs" />
-    <Compile Include="Controllers\Mantenimientos\UnidadMedidaController.cs" />
+    <Compile Include="Controllers\Mantenimientos\ProductoController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -204,10 +203,9 @@
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Categoria\Index.cshtml" />
     <Content Include="Views\Categoria\Create.cshtml" />
-    <Content Include="Views\Marca\Create.cshtml" />
-    <Content Include="Views\Marca\Index.cshtml" />
-    <Content Include="Views\UnidadMedida\Create.cshtml" />
-    <Content Include="Views\UnidadMedida\Index.cshtml" />
+    <Content Include="Views\Producto\Index.cshtml" />
+    <Content Include="Views\Producto\Index2.cshtml" />
+    <Content Include="Views\Producto\Create.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -227,12 +225,16 @@
     <Content Include="Scripts\jquery-3.3.1.min.map" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\App.Domain.Services.Interfaces\App.Domain.Services.Interfaces.csproj">
+      <Project>{B5AE0FB2-FB12-4A70-ADAB-6D0F812B25EB}</Project>
+      <Name>App.Domain.Services.Interfaces</Name>
+    </ProjectReference>
     <ProjectReference Include="..\App.Domain.Services\App.Domain.Services.csproj">
-      <Project>{30A2335E-D9FB-4AD6-B9B3-831F2E988110}</Project>
+      <Project>{BB3C6F74-80FB-4C8F-986C-89F6420EEE97}</Project>
       <Name>App.Domain.Services</Name>
     </ProjectReference>
     <ProjectReference Include="..\App.Entities.Base\App.Entities.Base.csproj">
-      <Project>{621d226c-c7bc-4d71-bfdc-034f369e3420}</Project>
+      <Project>{e1ed223d-2c98-499d-a406-a5fe8d4af2a7}</Project>
       <Name>App.Entities.Base</Name>
     </ProjectReference>
   </ItemGroup>
@@ -252,9 +254,9 @@
         <WebProjectProperties>
           <UseIIS>True</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
-          <DevelopmentServerPort>51296</DevelopmentServerPort>
+          <DevelopmentServerPort>51590</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>http://localhost:51296/</IISUrl>
+          <IISUrl>http://localhost:51590/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>

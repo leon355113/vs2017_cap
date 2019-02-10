@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{A1C063E4-0810-43F8-A8C7-E132CEB5633A}</ProjectGuid>
+    <ProjectGuid>{06D5D792-BD0B-48E8-940A-C9B24E805AD2}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>App.Data.DataBase</RootNamespace>
@@ -58,12 +58,9 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\App.Entities.Base\App.Entities.Base.csproj">
-      <Project>{621d226c-c7bc-4d71-bfdc-034f369e3420}</Project>
+      <Project>{e1ed223d-2c98-499d-a406-a5fe8d4af2a7}</Project>
       <Name>App.Entities.Base</Name>
     </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

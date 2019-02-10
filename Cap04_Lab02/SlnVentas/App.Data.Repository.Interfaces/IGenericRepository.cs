@@ -7,15 +7,17 @@ using System.Threading.Tasks;
 
 namespace App.Data.Repository.Interfaces
 {
-    public interface IGenericRepository<TEntity> where TEntity:class
+    public interface IGenericRepository<TEntity>
+        where TEntity:class
     {
         void Add(TEntity entity);
         void Update(TEntity entity);
         void Remove(TEntity entity);
-        TEntity GetBydId(int id);
+        TEntity GetById(int id);
         IEnumerable<TEntity> GetAll(
-            Expression<Func<TEntity,bool>> predicate=null);//Se coloca null porque es un parametro opcional
+            Expression<Func<TEntity, bool>> predicate = null,
+            string includes = null
+            );
         int Count();
-
     }
 }

@@ -6,7 +6,7 @@
     <ProductVersion>
     </ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{734212E0-4168-44CF-8F76-37ABB6F115F4}</ProjectGuid>
+    <ProjectGuid>{6B1B4988-FBFF-4068-8B03-0496401F6D19}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>App.UI.Web.MVC.Tests</RootNamespace>
@@ -100,7 +100,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\App.UI.Web.MVC\App.UI.Web.MVC.csproj">
-      <Project>{D18CF665-885D-4517-A3AC-8F5EE6F4D6AC}</Project>
+      <Project>{AE0976E8-835F-4F5B-B97A-0BC77A18FADE}</Project>
       <Name>App.UI.Web.MVC</Name>
     </ProjectReference>
   </ItemGroup>

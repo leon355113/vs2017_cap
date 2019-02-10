@@ -18,16 +18,18 @@ namespace App.Data.DataBase.Test
                     Nombre = "Mouse",
                     Estado = true
                 };
+
                 model.Categoria.Add(categoria);
-                model.SaveChanges(); //Es requerido para confirmar la transaccion en EF
-                   
-                //Verificando que esta creando la categoria
+                model.SaveChanges(); //Es requerido para confirmar 
+                                    //la transaccion en EF
+
+                //Verificando que se este creando la categoria
                 Assert.IsTrue(categoria.CategoriaID > 0);
             }
         }
 
-        [TestMethod]//Indica que se va a realizar una prueba unitaria
-        public void VerificarRegistros()
+        [TestMethod]
+        public void VerificarRegistos()
         {
             using (var model = new AppModel())
             {

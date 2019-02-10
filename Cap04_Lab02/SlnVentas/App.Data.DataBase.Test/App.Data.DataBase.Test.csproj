@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{1F120946-2BB9-46C3-82F6-D2998ADBEA00}</ProjectGuid>
+    <ProjectGuid>{4F3061C3-F7A2-4B61-8379-74564550D29C}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>App.Data.DataBase.Test</RootNamespace>
@@ -64,11 +64,11 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\App.Data.DataBase\App.Data.DataBase.csproj">
-      <Project>{a1c063e4-0810-43f8-a8c7-e132ceb5633a}</Project>
+      <Project>{06d5d792-bd0b-48e8-940a-c9b24e805ad2}</Project>
       <Name>App.Data.DataBase</Name>
     </ProjectReference>
     <ProjectReference Include="..\App.Entities.Base\App.Entities.Base.csproj">
-      <Project>{621d226c-c7bc-4d71-bfdc-034f369e3420}</Project>
+      <Project>{e1ed223d-2c98-499d-a406-a5fe8d4af2a7}</Project>
       <Name>App.Entities.Base</Name>
     </ProjectReference>
   </ItemGroup>

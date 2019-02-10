@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{3715EF9A-7376-44C6-A4E1-8F724269A82B}</ProjectGuid>
+    <ProjectGuid>{AE87FD62-2AF2-451D-8A90-CD099E77660E}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>App.Data.Repository</RootNamespace>
@@ -48,23 +48,22 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AppUnitOfWork.cs" />
+    <Compile Include="ProductoRepository.cs" />
     <Compile Include="CategoriaRepository.cs" />
     <Compile Include="GenericRepository.cs" />
-    <Compile Include="MarcaRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="UnidadMedidaRepository.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\App.Data.DataBase\App.Data.DataBase.csproj">
-      <Project>{a1c063e4-0810-43f8-a8c7-e132ceb5633a}</Project>
+      <Project>{06d5d792-bd0b-48e8-940a-c9b24e805ad2}</Project>
       <Name>App.Data.DataBase</Name>
     </ProjectReference>
     <ProjectReference Include="..\App.Data.Repository.Interfaces\App.Data.Repository.Interfaces.csproj">
-      <Project>{83d6772e-efa8-4a27-8a08-8137707454b7}</Project>
+      <Project>{75f4274e-c1b3-483d-b8a6-5dd289180b68}</Project>
       <Name>App.Data.Repository.Interfaces</Name>
     </ProjectReference>
     <ProjectReference Include="..\App.Entities.Base\App.Entities.Base.csproj">
-      <Project>{621d226c-c7bc-4d71-bfdc-034f369e3420}</Project>
+      <Project>{e1ed223d-2c98-499d-a406-a5fe8d4af2a7}</Project>
       <Name>App.Entities.Base</Name>
     </ProjectReference>
   </ItemGroup>

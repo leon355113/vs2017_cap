@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{0224869B-0436-49CB-BD4E-6FFDF76005E5}</ProjectGuid>
+    <ProjectGuid>{C7511D22-29C1-483C-9D24-3506A1AE8776}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>App.Data.Repository.Test</RootNamespace>
@@ -55,7 +55,7 @@
     <Reference Include="System.Core" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CategoriaRepositorioTest.cs" />
+    <Compile Include="CategoriaRepositoryTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -64,19 +64,19 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\App.Data.DataBase\App.Data.DataBase.csproj">
-      <Project>{a1c063e4-0810-43f8-a8c7-e132ceb5633a}</Project>
+      <Project>{06d5d792-bd0b-48e8-940a-c9b24e805ad2}</Project>
       <Name>App.Data.DataBase</Name>
     </ProjectReference>
     <ProjectReference Include="..\App.Data.Repository.Interfaces\App.Data.Repository.Interfaces.csproj">
-      <Project>{83d6772e-efa8-4a27-8a08-8137707454b7}</Project>
+      <Project>{75f4274e-c1b3-483d-b8a6-5dd289180b68}</Project>
       <Name>App.Data.Repository.Interfaces</Name>
     </ProjectReference>
     <ProjectReference Include="..\App.Data.Repository\App.Data.Repository.csproj">
-      <Project>{3715ef9a-7376-44c6-a4e1-8f724269a82b}</Project>
+      <Project>{ae87fd62-2af2-451d-8a90-cd099e77660e}</Project>
       <Name>App.Data.Repository</Name>
     </ProjectReference>
     <ProjectReference Include="..\App.Entities.Base\App.Entities.Base.csproj">
-      <Project>{621d226c-c7bc-4d71-bfdc-034f369e3420}</Project>
+      <Project>{e1ed223d-2c98-499d-a406-a5fe8d4af2a7}</Project>
       <Name>App.Entities.Base</Name>
     </ProjectReference>
   </ItemGroup>

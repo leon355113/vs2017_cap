@@ -11,6 +11,8 @@ namespace App.Data.DataBase
         public AppModel()
             : base("name=AppModel")
         {
+            this.Configuration.LazyLoadingEnabled = false;
+            this.Configuration.ProxyCreationEnabled = false;
         }
 
         public virtual DbSet<Categoria> Categoria { get; set; }
@@ -29,14 +31,6 @@ namespace App.Data.DataBase
                 .HasMany(e => e.Producto)
                 .WithRequired(e => e.Marca)
                 .WillCascadeOnDelete(false);
-
-            modelBuilder.Entity<Producto>()
-                .Property(e => e.Nombre)
-                .IsUnicode(false);
-
-            modelBuilder.Entity<UnidadMedida>()
-                .Property(e => e.Nombre)
-                .IsUnicode(false);
 
             modelBuilder.Entity<UnidadMedida>()
                 .HasMany(e => e.Producto)

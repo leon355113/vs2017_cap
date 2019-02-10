@@ -17,6 +17,7 @@ namespace App.Entities.Base
 
         public int CategoriaID { get; set; }
 
+        [Required(ErrorMessage ="Este campo es obligatorio")]
         [StringLength(100)]
         public string Nombre { get; set; }
 
