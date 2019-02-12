@@ -60,3 +60,4 @@ C:\WebVisualStudio2017\VisualStudio_ACCJ\Cap04\ProyectoNuevo\SlnVentas\App.UI.We
 C:\WebVisualStudio2017\VisualStudio_ACCJ\Cap04\ProyectoNuevo\SlnVentas\App.UI.Web.MVC.Tests\bin\Debug\EntityFramework.xml
 C:\WebVisualStudio2017\VisualStudio_ACCJ\Cap04\ProyectoNuevo\SlnVentas\App.UI.Web.MVC.Tests\bin\Debug\App.Data.DataBase.pdb
 C:\WebVisualStudio2017\VisualStudio_ACCJ\Cap04\ProyectoNuevo\SlnVentas\App.UI.Web.MVC.Tests\bin\Debug\App.Data.DataBase.dll.config
+C:\Users\ASTRID\Documents\GitHub\VisualStudio_ACCJ\Cap04\ProyectoNuevo\SlnVentas\App.UI.Web.MVC.Tests\obj\Debug\App.UI.Web.MVC.Tests.csprojResolveAssemblyReference.cache

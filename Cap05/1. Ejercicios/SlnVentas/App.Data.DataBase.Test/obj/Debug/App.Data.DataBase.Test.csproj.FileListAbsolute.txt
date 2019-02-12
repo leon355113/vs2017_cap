@@ -1,0 +1,79 @@
+C:\WebVisualStudio2017\VisualStudio_ACCJ\Cap04\ProyectoNuevo\SlnVentas\App.Data.DataBase.Test\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+C:\WebVisualStudio2017\VisualStudio_ACCJ\Cap04\ProyectoNuevo\SlnVentas\App.Data.DataBase.Test\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+C:\WebVisualStudio2017\VisualStudio_ACCJ\Cap04\ProyectoNuevo\SlnVentas\App.Data.DataBase.Test\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+C:\WebVisualStudio2017\VisualStudio_ACCJ\Cap04\ProyectoNuevo\SlnVentas\App.Data.DataBase.Test\bin\Debug\es\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.resources.dll
+C:\WebVisualStudio2017\VisualStudio_ACCJ\Cap04\ProyectoNuevo\SlnVentas\App.Data.DataBase.Test\bin\Debug\es\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.resources.dll
+C:\WebVisualStudio2017\VisualStudio_ACCJ\Cap04\ProyectoNuevo\SlnVentas\App.Data.DataBase.Test\bin\Debug\es\Microsoft.VisualStudio.TestPlatform.TestFramework.resources.dll
+C:\WebVisualStudio2017\VisualStudio_ACCJ\Cap04\ProyectoNuevo\SlnVentas\App.Data.DataBase.Test\bin\Debug\App.Data.DataBase.Test.dll
+C:\WebVisualStudio2017\VisualStudio_ACCJ\Cap04\ProyectoNuevo\SlnVentas\App.Data.DataBase.Test\bin\Debug\App.Data.DataBase.Test.pdb
+C:\WebVisualStudio2017\VisualStudio_ACCJ\Cap04\ProyectoNuevo\SlnVentas\App.Data.DataBase.Test\bin\Debug\App.Data.DataBase.dll
+C:\WebVisualStudio2017\VisualStudio_ACCJ\Cap04\ProyectoNuevo\SlnVentas\App.Data.DataBase.Test\bin\Debug\App.Entities.Base.dll
+C:\WebVisualStudio2017\VisualStudio_ACCJ\Cap04\ProyectoNuevo\SlnVentas\App.Data.DataBase.Test\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.dll
+C:\WebVisualStudio2017\VisualStudio_ACCJ\Cap04\ProyectoNuevo\SlnVentas\App.Data.DataBase.Test\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll
+C:\WebVisualStudio2017\VisualStudio_ACCJ\Cap04\ProyectoNuevo\SlnVentas\App.Data.DataBase.Test\bin\Debug\EntityFramework.dll
+C:\WebVisualStudio2017\VisualStudio_ACCJ\Cap04\ProyectoNuevo\SlnVentas\App.Data.DataBase.Test\bin\Debug\App.Data.DataBase.pdb
+C:\WebVisualStudio2017\VisualStudio_ACCJ\Cap04\ProyectoNuevo\SlnVentas\App.Data.DataBase.Test\bin\Debug\App.Data.DataBase.dll.config
+C:\WebVisualStudio2017\VisualStudio_ACCJ\Cap04\ProyectoNuevo\SlnVentas\App.Data.DataBase.Test\bin\Debug\App.Entities.Base.pdb
+C:\WebVisualStudio2017\VisualStudio_ACCJ\Cap04\ProyectoNuevo\SlnVentas\App.Data.DataBase.Test\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.xml
+C:\WebVisualStudio2017\VisualStudio_ACCJ\Cap04\ProyectoNuevo\SlnVentas\App.Data.DataBase.Test\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
+C:\WebVisualStudio2017\VisualStudio_ACCJ\Cap04\ProyectoNuevo\SlnVentas\App.Data.DataBase.Test\bin\Debug\EntityFramework.xml
+C:\WebVisualStudio2017\VisualStudio_ACCJ\Cap04\ProyectoNuevo\SlnVentas\App.Data.DataBase.Test\obj\Debug\App.Data.DataBase.Test.csprojAssemblyReference.cache
+C:\WebVisualStudio2017\VisualStudio_ACCJ\Cap04\ProyectoNuevo\SlnVentas\App.Data.DataBase.Test\obj\Debug\App.Data.DataBase.Test.csproj.CoreCompileInputs.cache
+C:\WebVisualStudio2017\VisualStudio_ACCJ\Cap04\ProyectoNuevo\SlnVentas\App.Data.DataBase.Test\obj\Debug\App.Data.DataBase.Test.csproj.CopyComplete
+C:\WebVisualStudio2017\VisualStudio_ACCJ\Cap04\ProyectoNuevo\SlnVentas\App.Data.DataBase.Test\obj\Debug\App.Data.DataBase.Test.dll
+C:\WebVisualStudio2017\VisualStudio_ACCJ\Cap04\ProyectoNuevo\SlnVentas\App.Data.DataBase.Test\obj\Debug\App.Data.DataBase.Test.pdb
+C:\WebVisualStudio2017\VisualStudio_ACCJ\Cap04\ProyectoNuevo\SlnVentas\App.Data.DataBase.Test\bin\Debug\App.Data.DataBase.Test.dll.config
+C:\WebVisualStudio2017\VisualStudio_ACCJ\Cap04\ProyectoNuevo\SlnVentas\App.Data.DataBase.Test\bin\Debug\EntityFramework.SqlServer.dll
+C:\WebVisualStudio2017\VisualStudio_ACCJ\Cap04\ProyectoNuevo\SlnVentas\App.Data.DataBase.Test\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\ASTRID\Documents\GitHub\VisualStudio_ACCJ\Cap04\ProyectoNuevo\SlnVentas\App.Data.DataBase.Test\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+C:\Users\ASTRID\Documents\GitHub\VisualStudio_ACCJ\Cap04\ProyectoNuevo\SlnVentas\App.Data.DataBase.Test\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+C:\Users\ASTRID\Documents\GitHub\VisualStudio_ACCJ\Cap04\ProyectoNuevo\SlnVentas\App.Data.DataBase.Test\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+C:\Users\ASTRID\Documents\GitHub\VisualStudio_ACCJ\Cap04\ProyectoNuevo\SlnVentas\App.Data.DataBase.Test\bin\Debug\es\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.resources.dll
+C:\Users\ASTRID\Documents\GitHub\VisualStudio_ACCJ\Cap04\ProyectoNuevo\SlnVentas\App.Data.DataBase.Test\bin\Debug\es\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.resources.dll
+C:\Users\ASTRID\Documents\GitHub\VisualStudio_ACCJ\Cap04\ProyectoNuevo\SlnVentas\App.Data.DataBase.Test\bin\Debug\es\Microsoft.VisualStudio.TestPlatform.TestFramework.resources.dll
+C:\Users\ASTRID\Documents\GitHub\VisualStudio_ACCJ\Cap04\ProyectoNuevo\SlnVentas\App.Data.DataBase.Test\bin\Debug\App.Data.DataBase.Test.dll.config
+C:\Users\ASTRID\Documents\GitHub\VisualStudio_ACCJ\Cap04\ProyectoNuevo\SlnVentas\App.Data.DataBase.Test\bin\Debug\App.Data.DataBase.Test.dll
+C:\Users\ASTRID\Documents\GitHub\VisualStudio_ACCJ\Cap04\ProyectoNuevo\SlnVentas\App.Data.DataBase.Test\bin\Debug\App.Data.DataBase.Test.pdb
+C:\Users\ASTRID\Documents\GitHub\VisualStudio_ACCJ\Cap04\ProyectoNuevo\SlnVentas\App.Data.DataBase.Test\bin\Debug\App.Data.DataBase.dll
+C:\Users\ASTRID\Documents\GitHub\VisualStudio_ACCJ\Cap04\ProyectoNuevo\SlnVentas\App.Data.DataBase.Test\bin\Debug\App.Entities.Base.dll
+C:\Users\ASTRID\Documents\GitHub\VisualStudio_ACCJ\Cap04\ProyectoNuevo\SlnVentas\App.Data.DataBase.Test\bin\Debug\EntityFramework.dll
+C:\Users\ASTRID\Documents\GitHub\VisualStudio_ACCJ\Cap04\ProyectoNuevo\SlnVentas\App.Data.DataBase.Test\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\ASTRID\Documents\GitHub\VisualStudio_ACCJ\Cap04\ProyectoNuevo\SlnVentas\App.Data.DataBase.Test\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.dll
+C:\Users\ASTRID\Documents\GitHub\VisualStudio_ACCJ\Cap04\ProyectoNuevo\SlnVentas\App.Data.DataBase.Test\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll
+C:\Users\ASTRID\Documents\GitHub\VisualStudio_ACCJ\Cap04\ProyectoNuevo\SlnVentas\App.Data.DataBase.Test\bin\Debug\App.Data.DataBase.pdb
+C:\Users\ASTRID\Documents\GitHub\VisualStudio_ACCJ\Cap04\ProyectoNuevo\SlnVentas\App.Data.DataBase.Test\bin\Debug\App.Data.DataBase.dll.config
+C:\Users\ASTRID\Documents\GitHub\VisualStudio_ACCJ\Cap04\ProyectoNuevo\SlnVentas\App.Data.DataBase.Test\bin\Debug\App.Entities.Base.pdb
+C:\Users\ASTRID\Documents\GitHub\VisualStudio_ACCJ\Cap04\ProyectoNuevo\SlnVentas\App.Data.DataBase.Test\bin\Debug\EntityFramework.xml
+C:\Users\ASTRID\Documents\GitHub\VisualStudio_ACCJ\Cap04\ProyectoNuevo\SlnVentas\App.Data.DataBase.Test\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\ASTRID\Documents\GitHub\VisualStudio_ACCJ\Cap04\ProyectoNuevo\SlnVentas\App.Data.DataBase.Test\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.xml
+C:\Users\ASTRID\Documents\GitHub\VisualStudio_ACCJ\Cap04\ProyectoNuevo\SlnVentas\App.Data.DataBase.Test\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
+C:\Users\ASTRID\Documents\GitHub\VisualStudio_ACCJ\Cap04\ProyectoNuevo\SlnVentas\App.Data.DataBase.Test\obj\Debug\App.Data.DataBase.Test.csprojResolveAssemblyReference.cache
+C:\Users\ASTRID\Documents\GitHub\VisualStudio_ACCJ\Cap04\ProyectoNuevo\SlnVentas\App.Data.DataBase.Test\obj\Debug\App.Data.DataBase.Test.dll
+C:\Users\ASTRID\Documents\GitHub\VisualStudio_ACCJ\Cap04\ProyectoNuevo\SlnVentas\App.Data.DataBase.Test\obj\Debug\App.Data.DataBase.Test.pdb
+C:\WebVisualStudio2017\VisualStudio_ACCJ\Cap05\1. Ejercicios\SlnVentas\App.Data.DataBase.Test\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+C:\WebVisualStudio2017\VisualStudio_ACCJ\Cap05\1. Ejercicios\SlnVentas\App.Data.DataBase.Test\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+C:\WebVisualStudio2017\VisualStudio_ACCJ\Cap05\1. Ejercicios\SlnVentas\App.Data.DataBase.Test\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+C:\WebVisualStudio2017\VisualStudio_ACCJ\Cap05\1. Ejercicios\SlnVentas\App.Data.DataBase.Test\bin\Debug\es\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.resources.dll
+C:\WebVisualStudio2017\VisualStudio_ACCJ\Cap05\1. Ejercicios\SlnVentas\App.Data.DataBase.Test\bin\Debug\es\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.resources.dll
+C:\WebVisualStudio2017\VisualStudio_ACCJ\Cap05\1. Ejercicios\SlnVentas\App.Data.DataBase.Test\bin\Debug\es\Microsoft.VisualStudio.TestPlatform.TestFramework.resources.dll
+C:\WebVisualStudio2017\VisualStudio_ACCJ\Cap05\1. Ejercicios\SlnVentas\App.Data.DataBase.Test\bin\Debug\App.Data.DataBase.Test.dll.config
+C:\WebVisualStudio2017\VisualStudio_ACCJ\Cap05\1. Ejercicios\SlnVentas\App.Data.DataBase.Test\bin\Debug\App.Data.DataBase.Test.dll
+C:\WebVisualStudio2017\VisualStudio_ACCJ\Cap05\1. Ejercicios\SlnVentas\App.Data.DataBase.Test\bin\Debug\App.Data.DataBase.Test.pdb
+C:\WebVisualStudio2017\VisualStudio_ACCJ\Cap05\1. Ejercicios\SlnVentas\App.Data.DataBase.Test\bin\Debug\App.Data.DataBase.dll
+C:\WebVisualStudio2017\VisualStudio_ACCJ\Cap05\1. Ejercicios\SlnVentas\App.Data.DataBase.Test\bin\Debug\App.Entities.Base.dll
+C:\WebVisualStudio2017\VisualStudio_ACCJ\Cap05\1. Ejercicios\SlnVentas\App.Data.DataBase.Test\bin\Debug\EntityFramework.dll
+C:\WebVisualStudio2017\VisualStudio_ACCJ\Cap05\1. Ejercicios\SlnVentas\App.Data.DataBase.Test\bin\Debug\EntityFramework.SqlServer.dll
+C:\WebVisualStudio2017\VisualStudio_ACCJ\Cap05\1. Ejercicios\SlnVentas\App.Data.DataBase.Test\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.dll
+C:\WebVisualStudio2017\VisualStudio_ACCJ\Cap05\1. Ejercicios\SlnVentas\App.Data.DataBase.Test\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll
+C:\WebVisualStudio2017\VisualStudio_ACCJ\Cap05\1. Ejercicios\SlnVentas\App.Data.DataBase.Test\bin\Debug\App.Data.DataBase.pdb
+C:\WebVisualStudio2017\VisualStudio_ACCJ\Cap05\1. Ejercicios\SlnVentas\App.Data.DataBase.Test\bin\Debug\App.Data.DataBase.dll.config
+C:\WebVisualStudio2017\VisualStudio_ACCJ\Cap05\1. Ejercicios\SlnVentas\App.Data.DataBase.Test\bin\Debug\App.Entities.Base.pdb
+C:\WebVisualStudio2017\VisualStudio_ACCJ\Cap05\1. Ejercicios\SlnVentas\App.Data.DataBase.Test\bin\Debug\EntityFramework.xml
+C:\WebVisualStudio2017\VisualStudio_ACCJ\Cap05\1. Ejercicios\SlnVentas\App.Data.DataBase.Test\bin\Debug\EntityFramework.SqlServer.xml
+C:\WebVisualStudio2017\VisualStudio_ACCJ\Cap05\1. Ejercicios\SlnVentas\App.Data.DataBase.Test\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.xml
+C:\WebVisualStudio2017\VisualStudio_ACCJ\Cap05\1. Ejercicios\SlnVentas\App.Data.DataBase.Test\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
+C:\WebVisualStudio2017\VisualStudio_ACCJ\Cap05\1. Ejercicios\SlnVentas\App.Data.DataBase.Test\obj\Debug\App.Data.DataBase.Test.csprojAssemblyReference.cache
+C:\WebVisualStudio2017\VisualStudio_ACCJ\Cap05\1. Ejercicios\SlnVentas\App.Data.DataBase.Test\obj\Debug\App.Data.DataBase.Test.csproj.CoreCompileInputs.cache
+C:\WebVisualStudio2017\VisualStudio_ACCJ\Cap05\1. Ejercicios\SlnVentas\App.Data.DataBase.Test\obj\Debug\App.Data.DataBase.Test.csproj.CopyComplete
+C:\WebVisualStudio2017\VisualStudio_ACCJ\Cap05\1. Ejercicios\SlnVentas\App.Data.DataBase.Test\obj\Debug\App.Data.DataBase.Test.dll
+C:\WebVisualStudio2017\VisualStudio_ACCJ\Cap05\1. Ejercicios\SlnVentas\App.Data.DataBase.Test\obj\Debug\App.Data.DataBase.Test.pdb

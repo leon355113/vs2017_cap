@@ -1,0 +1,61 @@
+C:\WebVisualStudio2017\VisualStudio_ACCJ\Cap04\ProyectoNuevo\SlnVentas\App.Domain.Services\obj\Debug\App.Domain.Services.csprojAssemblyReference.cache
+C:\WebVisualStudio2017\VisualStudio_ACCJ\Cap04\ProyectoNuevo\SlnVentas\App.Domain.Services\obj\Debug\App.Domain.Services.csproj.CoreCompileInputs.cache
+C:\WebVisualStudio2017\VisualStudio_ACCJ\Cap04\ProyectoNuevo\SlnVentas\App.Domain.Services\bin\Debug\App.Domain.Services.dll
+C:\WebVisualStudio2017\VisualStudio_ACCJ\Cap04\ProyectoNuevo\SlnVentas\App.Domain.Services\bin\Debug\App.Domain.Services.pdb
+C:\WebVisualStudio2017\VisualStudio_ACCJ\Cap04\ProyectoNuevo\SlnVentas\App.Domain.Services\bin\Debug\App.Data.Repository.dll
+C:\WebVisualStudio2017\VisualStudio_ACCJ\Cap04\ProyectoNuevo\SlnVentas\App.Domain.Services\bin\Debug\App.Data.Repository.Interfaces.dll
+C:\WebVisualStudio2017\VisualStudio_ACCJ\Cap04\ProyectoNuevo\SlnVentas\App.Domain.Services\bin\Debug\App.Domain.Interfaces.dll
+C:\WebVisualStudio2017\VisualStudio_ACCJ\Cap04\ProyectoNuevo\SlnVentas\App.Domain.Services\bin\Debug\App.Entities.Base.dll
+C:\WebVisualStudio2017\VisualStudio_ACCJ\Cap04\ProyectoNuevo\SlnVentas\App.Domain.Services\bin\Debug\EntityFramework.dll
+C:\WebVisualStudio2017\VisualStudio_ACCJ\Cap04\ProyectoNuevo\SlnVentas\App.Domain.Services\bin\Debug\App.Data.DataBase.dll
+C:\WebVisualStudio2017\VisualStudio_ACCJ\Cap04\ProyectoNuevo\SlnVentas\App.Domain.Services\bin\Debug\App.Data.Repository.Interfaces.pdb
+C:\WebVisualStudio2017\VisualStudio_ACCJ\Cap04\ProyectoNuevo\SlnVentas\App.Domain.Services\bin\Debug\App.Data.Repository.pdb
+C:\WebVisualStudio2017\VisualStudio_ACCJ\Cap04\ProyectoNuevo\SlnVentas\App.Domain.Services\bin\Debug\App.Data.Repository.dll.config
+C:\WebVisualStudio2017\VisualStudio_ACCJ\Cap04\ProyectoNuevo\SlnVentas\App.Domain.Services\bin\Debug\App.Domain.Interfaces.pdb
+C:\WebVisualStudio2017\VisualStudio_ACCJ\Cap04\ProyectoNuevo\SlnVentas\App.Domain.Services\bin\Debug\App.Entities.Base.pdb
+C:\WebVisualStudio2017\VisualStudio_ACCJ\Cap04\ProyectoNuevo\SlnVentas\App.Domain.Services\bin\Debug\EntityFramework.xml
+C:\WebVisualStudio2017\VisualStudio_ACCJ\Cap04\ProyectoNuevo\SlnVentas\App.Domain.Services\bin\Debug\App.Data.DataBase.pdb
+C:\WebVisualStudio2017\VisualStudio_ACCJ\Cap04\ProyectoNuevo\SlnVentas\App.Domain.Services\bin\Debug\App.Data.DataBase.dll.config
+C:\WebVisualStudio2017\VisualStudio_ACCJ\Cap04\ProyectoNuevo\SlnVentas\App.Domain.Services\obj\Debug\App.Domain.Services.csproj.CopyComplete
+C:\WebVisualStudio2017\VisualStudio_ACCJ\Cap04\ProyectoNuevo\SlnVentas\App.Domain.Services\obj\Debug\App.Domain.Services.dll
+C:\WebVisualStudio2017\VisualStudio_ACCJ\Cap04\ProyectoNuevo\SlnVentas\App.Domain.Services\obj\Debug\App.Domain.Services.pdb
+C:\Users\ASTRID\Documents\GitHub\VisualStudio_ACCJ\Cap04\ProyectoNuevo\SlnVentas\App.Domain.Services\obj\Debug\App.Domain.Services.csprojResolveAssemblyReference.cache
+C:\Users\ASTRID\Documents\GitHub\VisualStudio_ACCJ\Cap04\ProyectoNuevo\SlnVentas\App.Domain.Services\bin\Debug\App.Domain.Services.dll
+C:\Users\ASTRID\Documents\GitHub\VisualStudio_ACCJ\Cap04\ProyectoNuevo\SlnVentas\App.Domain.Services\bin\Debug\App.Domain.Services.pdb
+C:\Users\ASTRID\Documents\GitHub\VisualStudio_ACCJ\Cap04\ProyectoNuevo\SlnVentas\App.Domain.Services\bin\Debug\App.Data.Repository.dll
+C:\Users\ASTRID\Documents\GitHub\VisualStudio_ACCJ\Cap04\ProyectoNuevo\SlnVentas\App.Domain.Services\bin\Debug\App.Data.Repository.Interfaces.dll
+C:\Users\ASTRID\Documents\GitHub\VisualStudio_ACCJ\Cap04\ProyectoNuevo\SlnVentas\App.Domain.Services\bin\Debug\App.Domain.Interfaces.dll
+C:\Users\ASTRID\Documents\GitHub\VisualStudio_ACCJ\Cap04\ProyectoNuevo\SlnVentas\App.Domain.Services\bin\Debug\App.Entities.Base.dll
+C:\Users\ASTRID\Documents\GitHub\VisualStudio_ACCJ\Cap04\ProyectoNuevo\SlnVentas\App.Domain.Services\bin\Debug\EntityFramework.dll
+C:\Users\ASTRID\Documents\GitHub\VisualStudio_ACCJ\Cap04\ProyectoNuevo\SlnVentas\App.Domain.Services\bin\Debug\App.Data.DataBase.dll
+C:\Users\ASTRID\Documents\GitHub\VisualStudio_ACCJ\Cap04\ProyectoNuevo\SlnVentas\App.Domain.Services\bin\Debug\App.Data.Repository.Interfaces.pdb
+C:\Users\ASTRID\Documents\GitHub\VisualStudio_ACCJ\Cap04\ProyectoNuevo\SlnVentas\App.Domain.Services\bin\Debug\App.Data.Repository.pdb
+C:\Users\ASTRID\Documents\GitHub\VisualStudio_ACCJ\Cap04\ProyectoNuevo\SlnVentas\App.Domain.Services\bin\Debug\App.Data.Repository.dll.config
+C:\Users\ASTRID\Documents\GitHub\VisualStudio_ACCJ\Cap04\ProyectoNuevo\SlnVentas\App.Domain.Services\bin\Debug\App.Domain.Interfaces.pdb
+C:\Users\ASTRID\Documents\GitHub\VisualStudio_ACCJ\Cap04\ProyectoNuevo\SlnVentas\App.Domain.Services\bin\Debug\App.Entities.Base.pdb
+C:\Users\ASTRID\Documents\GitHub\VisualStudio_ACCJ\Cap04\ProyectoNuevo\SlnVentas\App.Domain.Services\bin\Debug\EntityFramework.xml
+C:\Users\ASTRID\Documents\GitHub\VisualStudio_ACCJ\Cap04\ProyectoNuevo\SlnVentas\App.Domain.Services\bin\Debug\App.Data.DataBase.pdb
+C:\Users\ASTRID\Documents\GitHub\VisualStudio_ACCJ\Cap04\ProyectoNuevo\SlnVentas\App.Domain.Services\bin\Debug\App.Data.DataBase.dll.config
+C:\Users\ASTRID\Documents\GitHub\VisualStudio_ACCJ\Cap04\ProyectoNuevo\SlnVentas\App.Domain.Services\obj\Debug\App.Domain.Services.dll
+C:\Users\ASTRID\Documents\GitHub\VisualStudio_ACCJ\Cap04\ProyectoNuevo\SlnVentas\App.Domain.Services\obj\Debug\App.Domain.Services.pdb
+C:\WebVisualStudio2017\VisualStudio_ACCJ\Cap05\1. Ejercicios\SlnVentas\App.Domain.Services\bin\Debug\App.Domain.Services.dll
+C:\WebVisualStudio2017\VisualStudio_ACCJ\Cap05\1. Ejercicios\SlnVentas\App.Domain.Services\bin\Debug\App.Domain.Services.pdb
+C:\WebVisualStudio2017\VisualStudio_ACCJ\Cap05\1. Ejercicios\SlnVentas\App.Domain.Services\bin\Debug\App.Data.Repository.dll
+C:\WebVisualStudio2017\VisualStudio_ACCJ\Cap05\1. Ejercicios\SlnVentas\App.Domain.Services\bin\Debug\App.Data.Repository.Interfaces.dll
+C:\WebVisualStudio2017\VisualStudio_ACCJ\Cap05\1. Ejercicios\SlnVentas\App.Domain.Services\bin\Debug\App.Domain.Interfaces.dll
+C:\WebVisualStudio2017\VisualStudio_ACCJ\Cap05\1. Ejercicios\SlnVentas\App.Domain.Services\bin\Debug\App.Entities.Base.dll
+C:\WebVisualStudio2017\VisualStudio_ACCJ\Cap05\1. Ejercicios\SlnVentas\App.Domain.Services\bin\Debug\EntityFramework.dll
+C:\WebVisualStudio2017\VisualStudio_ACCJ\Cap05\1. Ejercicios\SlnVentas\App.Domain.Services\bin\Debug\App.Data.DataBase.dll
+C:\WebVisualStudio2017\VisualStudio_ACCJ\Cap05\1. Ejercicios\SlnVentas\App.Domain.Services\bin\Debug\App.Data.Repository.Interfaces.pdb
+C:\WebVisualStudio2017\VisualStudio_ACCJ\Cap05\1. Ejercicios\SlnVentas\App.Domain.Services\bin\Debug\App.Data.Repository.pdb
+C:\WebVisualStudio2017\VisualStudio_ACCJ\Cap05\1. Ejercicios\SlnVentas\App.Domain.Services\bin\Debug\App.Data.Repository.dll.config
+C:\WebVisualStudio2017\VisualStudio_ACCJ\Cap05\1. Ejercicios\SlnVentas\App.Domain.Services\bin\Debug\App.Domain.Interfaces.pdb
+C:\WebVisualStudio2017\VisualStudio_ACCJ\Cap05\1. Ejercicios\SlnVentas\App.Domain.Services\bin\Debug\App.Entities.Base.pdb
+C:\WebVisualStudio2017\VisualStudio_ACCJ\Cap05\1. Ejercicios\SlnVentas\App.Domain.Services\bin\Debug\EntityFramework.xml
+C:\WebVisualStudio2017\VisualStudio_ACCJ\Cap05\1. Ejercicios\SlnVentas\App.Domain.Services\bin\Debug\App.Data.DataBase.pdb
+C:\WebVisualStudio2017\VisualStudio_ACCJ\Cap05\1. Ejercicios\SlnVentas\App.Domain.Services\bin\Debug\App.Data.DataBase.dll.config
+C:\WebVisualStudio2017\VisualStudio_ACCJ\Cap05\1. Ejercicios\SlnVentas\App.Domain.Services\obj\Debug\App.Domain.Services.csprojAssemblyReference.cache
+C:\WebVisualStudio2017\VisualStudio_ACCJ\Cap05\1. Ejercicios\SlnVentas\App.Domain.Services\obj\Debug\App.Domain.Services.csproj.CoreCompileInputs.cache
+C:\WebVisualStudio2017\VisualStudio_ACCJ\Cap05\1. Ejercicios\SlnVentas\App.Domain.Services\obj\Debug\App.Domain.Services.csproj.CopyComplete
+C:\WebVisualStudio2017\VisualStudio_ACCJ\Cap05\1. Ejercicios\SlnVentas\App.Domain.Services\obj\Debug\App.Domain.Services.dll
+C:\WebVisualStudio2017\VisualStudio_ACCJ\Cap05\1. Ejercicios\SlnVentas\App.Domain.Services\obj\Debug\App.Domain.Services.pdb

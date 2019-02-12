@@ -1,0 +1,132 @@
+﻿@model  App.Entities.Base.Producto
+@{
+    ViewBag.Title = "Create";
+}
+
+<h2>Crear Producto</h2>
+
+@*Sin Html Helpers*@
+@*<form action="/Categoria/Create" method="post">
+        <label>Nombre</label><input name="nombre"/> <br />
+        <label>Descripción</label><input name="descripcion"/> <br />
+
+        <button class="btn btn-primary btn-md">Guardar</button>
+    </form>*@
+
+@*Con Html Helpers*@
+@*cuando esta la palabra for es que podemos acceder al modelo*@
+
+@using (Html.BeginForm())
+{
+
+    <div class="form-horizontal">
+        @*Crear caja oculta  para edicion y asi pueda viajar el id*@
+        @Html.HiddenFor(item => item.ProductoID)
+        @Html.HiddenFor(item => item.UsuarioCreador)
+        @Html.HiddenFor(item => item.FechaCreacion)
+        <div class="form-group">
+            <label class="col-sm-2 control-label">Codigo</label>
+            <div class="col-sm-10">
+                @Html.EditorFor(model => model.ProductoCode, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.ProductoCode, "", new { @class = "text-danger" })
+            </div>
+
+        </div>
+
+        <div class="form-group">
+            <label class="col-sm-2 control-label">Nombre</label>
+            <div class="col-sm-10">
+                @Html.EditorFor(model => model.Nombre, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.Nombre, "", new { @class = "text-danger" })
+
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label class="col-sm-2 control-label">Categoria</label>
+            <div class="col-sm-10">
+                @Html.DropDownListFor(model => model.CategoriaID,
+                        new SelectList(ViewBag.Categorias, "CategoriaID", "Nombre"),
+                                        "-- Seleccione una Categoria --", htmlAttributes: new { @class = "form-control" })
+                @Html.ValidationMessageFor(model => model.CategoriaID, "", new { @class = "text-danger" })
+
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label class="col-sm-2 control-label">Marca</label>
+            <div class="col-sm-10">              
+                @Html.DropDownListFor(model => model.MarcaID,
+                        new SelectList(ViewBag.Marcas, "MarcaID", "Nombre"),
+                                        "-- Seleccione una Marca --", htmlAttributes: new { @class = "form-control" })
+                @Html.ValidationMessageFor(model => model.MarcaID, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label class="col-sm-2 control-label">Unidad Medida</label>
+            <div class="col-sm-10">
+                @Html.DropDownListFor(model => model.UnidadMedidaID,
+                        new SelectList(ViewBag.UnidadesMedidas, "UnidadMedidaID", "Nombre"),
+                                        "-- Seleccione una Unidad Medida --", htmlAttributes: new { @class = "form-control" })
+                @Html.ValidationMessageFor(model => model.UnidadMedidaID, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label class="col-sm-2 control-label">Precio Mayor</label>
+            <div class="col-sm-10">
+                @Html.EditorFor(model => model.PrecioMayor, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.PrecioMayor, "", new { @class = "text-danger" })
+
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label class="col-sm-2 control-label">Precio Menor</label>
+            <div class="col-sm-10">
+                @Html.EditorFor(model => model.PrecioMenor, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.PrecioMenor, "", new { @class = "text-danger" })
+
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label class="col-sm-2 control-label">Stock Actual</label>
+            <div class="col-sm-10">
+                @Html.EditorFor(model => model.StockActual, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.StockActual, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label class="col-sm-2 control-label">Stock Minimo</label>
+            <div class="col-sm-10">
+                @Html.EditorFor(model => model.StockMinimo, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.StockMinimo, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+
+        <div class="form-group">
+            <div class="col-sm-offset-2 col-sm-10">
+                <button class="btn btn-primary btn-md">Guardar</button>
+            </div>
+        </div>
+
+    </div>
+
+}
+
+<div>
+    @Html.ActionLink("Atras", "Index")
+</div>
+
+@*Gracias al RenderSection del layout podremos definir estas secciones que nos permiten colocar scripts unicamente para el formulario*@
+@section scriptsAdicionales{
+    @Scripts.Render("~/bundles/jqueryval");
+}
+
+
+
+
