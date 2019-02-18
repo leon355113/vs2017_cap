@@ -1,0 +1,43 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Bienvenidos a Cibertec Web</title>
+    <link href="Content/css/Site.css" rel="stylesheet" />
+    <script src="Content/js/index.js"></script>
+    <script src="Content/js/video.js"></script>
+</head>
+<body>
+    <header>
+        <img src="Content/images/logo.jpg" class="headerlogo" />
+        <nav class="dropdown">
+            <ul class="dropdown-content">
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Registro</a></li>
+                <li><a href="#">Nuevos productos</a></li>
+                <li><a href="#">Ubicanos</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <h3>Nuestros productos</h3>
+        <video preload="auto" width="320" height="240" id="productoVideo">
+            <source src="Content/media/html5.mp4" type="video/mp4" />
+        </video>
+        <div>
+            <button onclick="cibertec.video.play('productoVideo')">Play</button>
+            <button onclick="cibertec.video.pause('productoVideo')">Pause</button>
+        </div>
+    </section>
+    <footer>
+        Nuestra dirección
+        &copy; Todos los derechos reservados a Cibertec - <span id="date"></span>
+    </footer>
+
+    <script type="text/javascript">
+        //debugger;
+        document.getElementById("date").innerHTML = cibertec.Index.currentYear();
+    </script>
+
+</body>
+</html>

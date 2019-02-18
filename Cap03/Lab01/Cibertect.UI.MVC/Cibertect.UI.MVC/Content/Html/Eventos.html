@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script type="text/javascript">
+        function onFocusFunction()
+        {
+            alert("Event focus")
+        }
+
+        function onBlurFunction() {
+            alert("Event Blur");
+        }
+
+        function onKeyPressFunction(e) {
+            if (e.keyCode == 13 || e.which == 13) {
+                alert("Se ha presionado la tecla enter");
+            }
+        }
+
+    </script>
+
+</head>
+<body>
+    <div><h2>EVENTOS HTML</h2></div>
+    <span>1. onFocus. Al seleccionar un elemento</span>
+    <input type="text" onfocus="onFocusFunction()" />
+    <hr />
+    <span>2. onBlur. Al seleccionar un elemento</span>
+    <input type="text" onblur="onBlurFunction()" />
+
+    <span>3. onKeyPress. Al pulsar alguna tecla</span>
+    <input type="text" onkeypress="onKeyPressFunction(event)" />
+</body>
+</html>

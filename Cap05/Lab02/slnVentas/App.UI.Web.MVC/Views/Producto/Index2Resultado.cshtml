@@ -1,0 +1,37 @@
+﻿@model  IEnumerable<App.Entities.Base.Producto>
+@using App.UI.Web.MVC.CustomHtmlHelpers;
+
+<table class="table">
+    <tr>
+        <td>Código</td>
+        <td>Nombre</td>
+        <td>Categoría</td>
+        <td>Marca</td>
+        <td>Precio Mayor</td>
+        <td>Precio Menor</td>
+        <td>Stock Actual</td>
+        <td></td>
+        <td></td>
+    </tr>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@item.ProductoCode</td>
+            <td>@item.Nombre</td>
+            <td>@item.Categoria.Nombre</td>
+            <td>@item.Marca.Nombre</td>
+            <td>@item.PrecioMayor</td>
+            <td>@item.PrecioMenor</td>
+            <td>@item.StockActual</td>
+            <td>@Html.SemaforoStock(item.StockActual)</td>
+            <td>
+                @Html.ActionLink("Editar", "Edit", "Producto", new { id = @item.ProductoID, name = item.Nombre }, null)
+
+
+            </td>
+        </tr>
+    }
+</table>
+
+
+

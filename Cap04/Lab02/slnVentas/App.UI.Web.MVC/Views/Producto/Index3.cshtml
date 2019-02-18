@@ -1,0 +1,80 @@
+﻿@model  IEnumerable<App.Entities.Base.Producto>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Lista de productos</h2>
+
+@using (Html.BeginForm())
+{
+    <label>Buscar por Nombre</label>
+    <input id="filterByName" name="filterByName" class="form-control" />
+    <br />
+    <label>Buscar por Categoría</label>
+    @Html.DropDownList("filterByCategoria",new SelectList(ViewBag.Categorias,"CategoriaID","Nombre"),"Todos"
+            ,new {@class="form-control" })
+    <br />
+    <button class="btn btn-primary" type="button" id="btnConsultar">Buscar</button>
+}
+
+<div id="resultado">
+
+</div>
+
+@section scriptsAdicionales
+{
+
+    <script src="~/Scripts/mustache.min.js"></script>
+
+    <script id="resultadoTable" type="x-tmpl-mustache">
+        <table class="table">
+            <tr>
+                <td>Codigo</td>
+                <td>Nombre</td>
+            </tr>
+            {{#Resultado}}
+            <tr>
+                <td>{{ProductoCode}}</td>
+                <td>{{Nombre}}</td>
+            </tr>
+            {{/Resultado}}
+        </table>
+    </script>
+
+    <script type="text/javascript">
+        $(document).ready(configInit);
+
+        function configInit() {
+            $("#btnConsultar").on("click", buscar);
+        }
+
+        function buscar() {
+            //Function jquery ajax
+            $.post("@Url.Action("Index3Buscar","Producto")",
+                {
+                    filterByName: $("#filterByName").val(),
+                    filterByCategoria: $("#filterByCategoria").val()
+                },
+                function (response) {
+                    var template = $("#resultadoTable").html();
+                    Mustache.parse(template);
+                    var htmlRendered = Mustache.render(template,
+                        {
+                            Resultado: JSON.parse(response)
+                        }
+                    )
+
+                    $("#resultado").html(htmlRendered);
+
+                }
+
+            )
+        }
+
+
+    </script>
+}
+
+
+

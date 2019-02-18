@@ -1,0 +1,56 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script src="../../Scripts/jquery-3.3.1.min.js"></script>
+    <script src="../js/helpers.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(config);
+
+        function config() {
+            cibertec.helpers.BloquearControls();
+        }
+
+    </script>
+
+</head>
+<body>
+    <form id="RegistroAlta3">
+        <fieldset>
+            <legend>Alta de servicios</legend>
+
+            <label for="txtNombre">Nombres</label>
+            <input type="text" id="txtNombre" />
+
+            <label for="txtApellidos">Apellidos</label>
+            <input type="text" id="txtApellidos" />
+
+            <label for="txtDNI">DNI</label>
+            <input type="text" id="txtDNI" />
+
+            <label for="txtContrasena">Contraseña</label>
+            <input type="password" id="txtContrasena" />
+        </fieldset>
+        <fieldset>
+            <legend>Datos del contacto</legend>
+            <label for="txtTelefono">Teléfono</label>
+            <input type="text" id="txtTelefono" />
+
+            <label for="txtEmail">Email</label>
+            <input type="text" id="txtEmail" />
+
+            <label for="txtDireccion">Dirección</label>
+            <input type="text" id="txtDireccion" />
+
+            <label for="txtCodigoPostal">Código Postal</label>
+            <input type="text" id="txtCodigoPostal" />
+
+        </fieldset>
+        <p>
+            <button type="submit">Grabar datos</button>
+        </p>
+    </form>
+</body>
+</html>
