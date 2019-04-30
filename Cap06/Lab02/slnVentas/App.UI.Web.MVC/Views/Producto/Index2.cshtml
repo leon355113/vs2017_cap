@@ -1,0 +1,54 @@
+﻿@model  IEnumerable<App.Entities.Base.Producto>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Lista de productos</h2>
+
+@using (Html.BeginForm())
+{
+    <label>Buscar por Nombre</label>
+    <input id="filterByName" name="filterByName" class="form-control" />
+    <br />
+    <label>Buscar por Categoría</label>
+    @Html.DropDownList("filterByCategoria",new SelectList(ViewBag.Categorias,"CategoriaID","Nombre"),"Todos"
+            ,new {@class="form-control" })
+    <br />
+    <button class="btn btn-primary" type="button" id="btnConsultar">Buscar</button>
+}
+
+<div id="resultado">
+
+</div>
+
+@section scriptsAdicionales
+{
+    <script type="text/javascript">
+        
+        $(configInit());        
+
+        function configInit() {
+            $("#btnConsultar").on("click", buscar);
+        }
+
+        function buscar() {
+            //Function jquery ajax
+            $.post("@Url.Action("Index2Buscar","Producto")",
+                {
+                    filterByName: $("#filterByName").val(),
+                    filterByCategoria: $("#filterByCategoria").val()
+                },
+                function (response) {
+                    $("#resultado").html(response);
+                }
+
+            )
+        }
+
+
+    </script>
+}
+
+
+

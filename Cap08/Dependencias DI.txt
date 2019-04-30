@@ -1,0 +1,4 @@
+Inyeccion por dependencia con Simple Injector
+Install-Package SimpleInjector
+Install-Package SimpleInjector.Integration.Web
+Install-Package SimpleInjector.Integration.Web.Mvc

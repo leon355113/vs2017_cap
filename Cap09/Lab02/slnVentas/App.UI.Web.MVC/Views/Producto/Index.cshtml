@@ -1,0 +1,50 @@
+﻿@model  IEnumerable<App.Entities.Base.Producto>
+@using App.UI.Web.MVC.CustomHtmlHelpers;
+
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Lista de productos</h2>
+
+@using (Html.BeginForm())
+{
+    <label>Buscar por Nombre</label>
+    <input name="filterByName" class="form-control" value="@ViewBag.filterByName" />
+    <br />
+    <label>Buscar por Categoría</label>
+    @Html.DropDownList("filterByCategoria",new SelectList(ViewBag.Categorias,"CategoriaID","Nombre"),"Todos"
+            ,new {@class="form-control" })
+    <br />
+    <button class="btn btn-primary">Buscar</button>
+}
+
+<table class="table">
+    <tr>
+        <td>Código</td>
+        <td>Nombre</td>
+        <td>Categoría</td>
+        <td>Marca</td>
+        <td>Precio Mayor</td>
+        <td>Precio Menor</td>
+        <td>Stock Actual</td>
+        <td>Stock Actual</td>
+    </tr>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@item.ProductoCode</td>
+            <td>@item.Nombre</td>
+            <td>@item.Categoria.Nombre</td>
+            <td>@item.Marca.Nombre</td>
+            <td>@item.PrecioMayor</td>
+            <td>@item.PrecioMenor</td>
+            <td>@item.StockActual</td>
+            <td>@Html.SemaforoStock(@item.StockActual)</td>
+        </tr>
+    }
+</table>
+
+
+

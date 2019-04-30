@@ -1,0 +1,37 @@
+﻿@model IEnumerable<App.Entities.Base.Categoria>
+
+@{
+    ViewBag.Title = "Lista de categorías";
+}
+
+<h2>Lista de Categorías</h2>
+
+@*Sin usar HTML Helper*@
+@*<a class="btn btn-success" href="/Categoria/Create">Nueva categoría</a>*@
+
+@*Usando HTML Helper*@
+@*@Html.ActionLink("Nueva categoría", "Create", "Categoria", new { @class = "btn btn-success" })*@
+
+<a href="#" onclick="app.helpers.showModal('CategoriaCreatePopup','@Url.Action("Create")')" class="btn btn-success">Nuevo</a>
+
+@using (Ajax.BeginForm("Buscar", "Categoria",
+    new AjaxOptions
+    {
+        HttpMethod = "POST",
+        InsertionMode = InsertionMode.Replace,
+        UpdateTargetId = "listado"
+    }
+    ))
+{
+<p>
+    <input name="filtroPorNombre" />
+    <button type="submit" class="buscar">Buscar</button>
+</p>
+}
+<div id="listado">
+    @Html.Action("Buscar")
+</div>
+
+
+@Modal.CreateModal("Crear Categoría", "CategoriaCreatePopup")
+

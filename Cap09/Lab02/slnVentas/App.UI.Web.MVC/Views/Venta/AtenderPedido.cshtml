@@ -1,0 +1,45 @@
+﻿
+@{
+    ViewBag.Title = "AtenderPedido";
+}
+
+<h2>AtenderPedido</h2>
+
+<div id="pedidoEnProgreso" class="alert alert-warning"></div>
+
+<input class="nroPedido form-control" />
+<button class="btn btn-success" onclick="AtenderPedido()">Atender Pedido</button>
+
+@section scriptsAdicionales
+{
+    <script>
+        var ventasHub = $.connection.ventasHub;
+        $.connection.hub.start().done(
+            function () {
+                //Se puede agregar código para informar que 
+                //la conexión con el hub se ha realizado correctamente
+                debugger;
+            }
+
+        );
+
+        function AtenderPedido() {
+            var pedido = $(".nroPedido").val();
+
+            //Invocando a la función del servidor que se ha implemenado
+            //en el hub
+            ventasHub.server.monitorearPedido(pedido);
+
+        }
+
+        ventasHub.client.revisarPedido = function (nroPedido) {
+
+            debugger;
+
+            $("#pedidoEnProgreso").text(nroPedido);
+        }
+
+
+    </script>
+
+}

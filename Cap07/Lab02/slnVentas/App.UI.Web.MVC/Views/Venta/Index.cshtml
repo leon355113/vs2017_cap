@@ -1,0 +1,75 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+<div id="registrarVenta" class="box box-warning">
+    <div class="box-header">
+        <h3 class="box-title">Realizar venta</h3>
+    </div><!-- /.box-header -->
+    <div class="box-body">
+        <form>
+            <div class="form-group">
+                <label>Cliente</label>
+                <!--Lista cliente-->
+            </div>
+            <div class="form-group">
+                <label>Producto</label>
+                <input type="text" readonly class="form-control nombre-producto" />
+                <button type="button" class="btn-success btn-buscar-producto">Buscar</button>
+            </div>
+            <div class="form-group">
+                <label>Precio</label>
+                <input type="text" readonly class="form-control precio-producto" />
+            </div>
+            <div class="form-group">
+                <label>Cantidad</label>
+                <input type="text" class="form-control cantidad-producto" />
+            </div>
+            <div class="form-group">
+                <button type="button" class="btn btn-success agregar">Agregar</button>
+            </div>
+        </form>
+        <div class="detalle-venta">
+            <!--Mostrar un listado de lo que va comprando-->
+        </div>
+    </div><!-- /.box-body -->
+    <div class="box-footer">
+        <button  type="button" class="btn-primary guardar">Registrar Venta</button>
+    </div>
+</div>
+
+@Modal.CreateModal("Búsqueda de Productos", "BusquedaProductoPopupID",
+    "app.RegistrarVentaView.MostrarProducto()"
+    )
+
+@section scriptsAdicionales
+{
+    <script id="RegistrarVentaDetalle" type="x-tmpl-mustache">
+        <table class="table">
+            <tr>
+                <th>Producto</th>
+                <th>Precio</th>
+                <th>Cantidad</th>
+                <th>SubTotal</th>
+            </tr>
+            {{#Detalle}}
+            <tr>
+                <td>{{Nombre}}</td>
+                <td>{{PrecioMenor}}</td>
+                <td>{{Cantidad}}</td>
+                <td>{{SubTotal}}</td>
+            </tr>
+            {{/Detalle}}
+
+        </table>
+    </script>
+
+
+    <script>
+        app.RegistrarVentaView.Init();
+    </script>
+
+
+    
+}

@@ -1,0 +1,15 @@
+-- Paso 1
+Install-Package Owin
+Install-Package Microsoft.Owin
+Install-Package Microsoft.Owin.Host.SystemWeb  (Instalar)
+Install-Package Microsoft.Owin.Security
+Install-Package Microsoft.Owin.Security.Cookies  (Instalar)
+Install-Package Microsoft.Web.Infraestruture
+
+-- Paso 2
+Agregar un archivo "Owin Startup" para configurar
+el tipo de autenticación y asignar la página de Login
+
+--Paso 3
+Establecer la seguridad en los controladores e implementar la
+página de Login

@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27703.2035
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lab02Templates", "Lab02Templates\Lab02Templates.csproj", "{3CAF8802-E8C2-43B6-90C1-7A89C8E7B8EE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebIntranet", "WebIntranet\WebIntranet.csproj", "{3C4C1EEA-68EB-486E-B142-BB173F5E0439}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3CAF8802-E8C2-43B6-90C1-7A89C8E7B8EE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3CAF8802-E8C2-43B6-90C1-7A89C8E7B8EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3CAF8802-E8C2-43B6-90C1-7A89C8E7B8EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3CAF8802-E8C2-43B6-90C1-7A89C8E7B8EE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3C4C1EEA-68EB-486E-B142-BB173F5E0439}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3C4C1EEA-68EB-486E-B142-BB173F5E0439}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3C4C1EEA-68EB-486E-B142-BB173F5E0439}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3C4C1EEA-68EB-486E-B142-BB173F5E0439}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {563F969C-A25D-4F24-ACE0-FAC5E6518D90}
+	EndGlobalSection
+EndGlobal

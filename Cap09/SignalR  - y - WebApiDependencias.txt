@@ -1,0 +1,9 @@
+***** SIGNAL R
+Microsoft.AspNet.SignalR (Instalandolo se agregan los demas paquetes )
+Microsoft.AspNet.SignalR.Core
+Microsoft.AspNet.SignalR.JS
+Microsoft.AspNet.SignalR.SystemWeb
+
+***Inyección por dependencia IoC en WebApi
+SimpleInjector
+SimpleInjector.Integration.WebApi
